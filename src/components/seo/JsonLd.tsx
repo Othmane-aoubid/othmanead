@@ -1,4 +1,11 @@
-import { PERSON, SITE_URL, EMAIL, LINKEDIN_URL, GITHUB_URL, KAGGLE_URL } from "@/lib/data";
+import {
+  PERSON,
+  SITE_URL,
+  EMAIL,
+  LINKEDIN_URL,
+  GITHUB_URL,
+  KAGGLE_URL,
+} from "@/lib/data";
 
 export function PersonSchema() {
   const schema = {
@@ -7,7 +14,12 @@ export function PersonSchema() {
     "@id": `${SITE_URL}/#person`,
     name: PERSON.name,
     alternateName: [PERSON.nameAr, "Othmane Aoubid"],
-    jobTitle: ["AI Engineer", "Machine Learning Engineer", "Data Scientist", "AI Automation Engineer"],
+    jobTitle: [
+      "AI Engineer",
+      "Machine Learning Engineer",
+      "Data Scientist",
+      "AI Automation Engineer",
+    ],
     description: PERSON.description,
     url: SITE_URL,
     mainEntityOfPage: `${SITE_URL}/about`,
@@ -28,16 +40,24 @@ export function PersonSchema() {
       { "@type": "Language", name: "Arabic" },
       { "@type": "Language", name: "English" },
     ],
-    worksFor: { "@type": "Organization", name: "Freelance / Independent AI Engineer" },
+    worksFor: {
+      "@type": "Organization",
+      name: "Freelance / Independent AI Engineer",
+    },
     alumniOf: [
-      { "@type": "CollegeOrUniversity", name: "ENSET Mohammedia", sameAs: "https://enset-media.ac.ma/" },
+      {
+        "@type": "CollegeOrUniversity",
+        name: "ENSET Mohammedia",
+        sameAs: "https://enset-media.ac.ma/",
+      },
       { "@type": "CollegeOrUniversity", name: "FST Mohammedia" },
     ],
     hasOccupation: {
       "@type": "Occupation",
-      name: "AI Engineer & Data Scientist",
+      name: "Full-Stack Developer based in Morocco, specializing in building secure web applications, scalable backend systems, and cloud-ready solutions. With professional experience across frontend development, backend engineering, cybersecurity, and production deployments, I combine modern technologies with practical engineering to deliver reliable software.t",
       occupationalCategory: "15-2051.00", // Data Scientists (O*NET)
-      skills: "Machine Learning, Deep Learning, Computer Vision, NLP, MLOps, AI Automation",
+      skills:
+        "Machine Learning, Deep Learning, Computer Vision, NLP, MLOps, AI Automation",
     },
     seeks: {
       "@type": "Demand",
@@ -106,7 +126,11 @@ export function WebsiteSchema() {
   );
 }
 
-export function FAQSchema({ items }: { items: { question: string; answer: string }[] }) {
+export function FAQSchema({
+  items,
+}: {
+  items: { question: string; answer: string }[];
+}) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -183,15 +207,26 @@ export function OrganizationSchema() {
     founder: { "@id": `${SITE_URL}/#person` },
     sameAs: [LINKEDIN_URL, GITHUB_URL, KAGGLE_URL],
     areaServed: "Worldwide",
-    address: { "@type": "PostalAddress", addressCountry: "MA", addressLocality: "Casablanca" },
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "MA",
+      addressLocality: "Casablanca",
+    },
   };
   return (
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
   );
 }
 
 /** Breadcrumb trail for a page. Pass localized {name, url} items in order. */
-export function BreadcrumbSchema({ items }: { items: { name: string; url: string }[] }) {
+export function BreadcrumbSchema({
+  items,
+}: {
+  items: { name: string; url: string }[];
+}) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -203,7 +238,10 @@ export function BreadcrumbSchema({ items }: { items: { name: string; url: string
     })),
   };
   return (
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
   );
 }
 
@@ -216,7 +254,10 @@ export function ProfilePageSchema({ url }: { url: string }) {
     mainEntity: { "@id": `${SITE_URL}/#person` },
   };
   return (
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
   );
 }
 
@@ -241,7 +282,10 @@ export function ItemListSchema({
     })),
   };
   return (
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
   );
 }
 
@@ -268,7 +312,10 @@ export function LearningResourceSchema({
     isAccessibleForFree: true,
   };
   return (
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
   );
 }
 

@@ -11,7 +11,7 @@ const OG_LOCALE: Record<Locale, string> = {
 };
 
 const OG_SUBTITLE: Record<Locale, string> = {
-  en: "AI Engineer & Data Scientist · Morocco",
+  en: "Full-Stack Developer based in Morocco, specializing in building secure web applications, scalable backend systems, and cloud-ready solutions. With professional experience across frontend development, backend engineering, cybersecurity, and production deployments, I combine modern technologies with practical engineering to deliver reliable software.t · Morocco",
   fr: "Ingénieur IA & Data Scientist · Maroc",
   ar: "مهندس ذكاء اصطناعي وعالم بيانات · المغرب",
 };

@@ -63,6 +63,7 @@ export default function HireCTA({ locale }: { locale: string }) {
                 size={16}
                 className="group-hover:translate-x-1 transition-transform"
               />
+              
             </Link>
             {/* <Link
               href={`/${locale}/services`}

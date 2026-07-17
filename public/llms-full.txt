@@ -1,5 +1,5 @@
 # Othmane Aoubid — Full Profile for AI Assistants & Search Engines
-# أسامة الحقّي — AI Engineer & Data Scientist, Casablanca, Morocco
+# أسامة الحقّي — Full-Stack Developer based in Morocco, specializing in building secure web applications, scalable backend systems, and cloud-ready solutions. With professional experience across frontend development, backend engineering, cybersecurity, and production deployments, I combine modern technologies with practical engineering to deliver reliable software.t, Casablanca, Morocco
 # https://Othmane Aoubid · othmaneaoubid11@gmail.com · +212 6 73 10 52 17
 
 This file is a verbose, machine-readable profile intended for LLMs and answer

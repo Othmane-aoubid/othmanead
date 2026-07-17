@@ -8,10 +8,12 @@ export const runtime = "edge";
 async function loadFont(text: string): Promise<ArrayBuffer | null> {
   try {
     const api = `https://fonts.googleapis.com/css2?family=Cairo:wght@700&text=${encodeURIComponent(
-      text
+      text,
     )}`;
     const css = await (
-      await fetch(api, { headers: { "User-Agent": "Mozilla/5.0 (compatible)" } })
+      await fetch(api, {
+        headers: { "User-Agent": "Mozilla/5.0 (compatible)" },
+      })
     ).text();
     const url = css.match(/src:\s*url\(([^)]+)\)\s*format/)?.[1];
     if (!url) return null;
@@ -26,106 +28,121 @@ const isArabic = (s: string) => /[؀-ۿ]/.test(s);
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
   const title = (searchParams.get("title") || "Othmane Aoubid").slice(0, 110);
-  const subtitle = (searchParams.get("subtitle") || "AI Engineer & Data Scientist").slice(0, 120);
+  const subtitle = (
+    searchParams.get("subtitle") ||
+    "Full-Stack Developer based in Morocco, specializing in building secure web applications, scalable backend systems, and cloud-ready solutions. With professional experience across frontend development, backend engineering, cybersecurity, and production deployments, I combine modern technologies with practical engineering to deliver reliable software.t"
+  ).slice(0, 120);
 
   const rtl = isArabic(title) || isArabic(subtitle);
   const fontData = await loadFont(`${title} ${subtitle} Othmane Aoubid OE`);
   const fonts = fontData
-    ? [{ name: "Cairo", data: fontData, weight: 700 as const, style: "normal" as const }]
+    ? [
+        {
+          name: "Cairo",
+          data: fontData,
+          weight: 700 as const,
+          style: "normal" as const,
+        },
+      ]
     : [];
 
   return new ImageResponse(
-    (
+    <div
+      style={{
+        width: "1200px",
+        height: "630px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: rtl ? "flex-end" : "flex-start",
+        padding: "80px",
+        background:
+          "linear-gradient(135deg, #0d0d1f 0%, #1a1a3e 50%, #0d0d1f 100%)",
+        fontFamily: fonts.length ? "Cairo, sans-serif" : "sans-serif",
+        position: "relative",
+        overflow: "hidden",
+        direction: rtl ? "rtl" : "ltr",
+      }}
+    >
       <div
         style={{
-          width: "1200px",
-          height: "630px",
+          position: "absolute",
+          inset: 0,
+          backgroundImage:
+            "radial-gradient(circle at 20% 50%, rgba(108, 99, 255, 0.15) 0%, transparent 50%), radial-gradient(circle at 80% 50%, rgba(0, 212, 170, 0.1) 0%, transparent 50%)",
+        }}
+      />
+      <div
+        style={{
+          width: "80px",
+          height: "80px",
+          borderRadius: "20px",
+          background: "linear-gradient(135deg, #6c63ff, #00d4aa)",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          fontSize: "28px",
+          fontWeight: 700,
+          color: "white",
+          marginBottom: "32px",
+        }}
+      >
+        OE
+      </div>
+
+      <div
+        style={{
           display: "flex",
           flexDirection: "column",
-          justifyContent: "center",
-          alignItems: rtl ? "flex-end" : "flex-start",
-          padding: "80px",
-          background: "linear-gradient(135deg, #0d0d1f 0%, #1a1a3e 50%, #0d0d1f 100%)",
-          fontFamily: fonts.length ? "Cairo, sans-serif" : "sans-serif",
-          position: "relative",
-          overflow: "hidden",
-          direction: rtl ? "rtl" : "ltr",
+          gap: "16px",
+          maxWidth: "1040px",
+          textAlign: rtl ? "right" : "left",
         }}
       >
         <div
           style={{
-            position: "absolute",
-            inset: 0,
-            backgroundImage:
-              "radial-gradient(circle at 20% 50%, rgba(108, 99, 255, 0.15) 0%, transparent 50%), radial-gradient(circle at 80% 50%, rgba(0, 212, 170, 0.1) 0%, transparent 50%)",
-          }}
-        />
-        <div
-          style={{
-            width: "80px",
-            height: "80px",
-            borderRadius: "20px",
-            background: "linear-gradient(135deg, #6c63ff, #00d4aa)",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            fontSize: "28px",
-            fontWeight: 700,
+            fontSize: "56px",
+            fontWeight: 800,
             color: "white",
-            marginBottom: "32px",
+            lineHeight: 1.15,
+            letterSpacing: rtl ? "0" : "-1px",
           }}
         >
-          OE
+          {title}
         </div>
-
         <div
           style={{
-            display: "flex",
-            flexDirection: "column",
-            gap: "16px",
-            maxWidth: "1040px",
-            textAlign: rtl ? "right" : "left",
+            fontSize: "26px",
+            color: "rgba(255,255,255,0.7)",
+            lineHeight: 1.4,
           }}
         >
-          <div
-            style={{
-              fontSize: "56px",
-              fontWeight: 800,
-              color: "white",
-              lineHeight: 1.15,
-              letterSpacing: rtl ? "0" : "-1px",
-            }}
-          >
-            {title}
-          </div>
-          <div style={{ fontSize: "26px", color: "rgba(255,255,255,0.7)", lineHeight: 1.4 }}>
-            {subtitle}
-          </div>
-        </div>
-
-        <div
-          style={{
-            position: "absolute",
-            bottom: "40px",
-            [rtl ? "left" : "right"]: "80px",
-            display: "flex",
-            alignItems: "center",
-            background: "rgba(108, 99, 255, 0.2)",
-            border: "1px solid rgba(108, 99, 255, 0.4)",
-            borderRadius: "100px",
-            padding: "8px 20px",
-          }}
-        >
-          <span style={{ color: "#6c63ff", fontSize: "16px", fontWeight: 600 }}>
-            Othmane Aoubid
-          </span>
+          {subtitle}
         </div>
       </div>
-    ),
+
+      <div
+        style={{
+          position: "absolute",
+          bottom: "40px",
+          [rtl ? "left" : "right"]: "80px",
+          display: "flex",
+          alignItems: "center",
+          background: "rgba(108, 99, 255, 0.2)",
+          border: "1px solid rgba(108, 99, 255, 0.4)",
+          borderRadius: "100px",
+          padding: "8px 20px",
+        }}
+      >
+        <span style={{ color: "#6c63ff", fontSize: "16px", fontWeight: 600 }}>
+          Othmane Aoubid
+        </span>
+      </div>
+    </div>,
     {
       width: 1200,
       height: 630,
       fonts: fonts.length ? fonts : undefined,
-    }
+    },
   );
 }

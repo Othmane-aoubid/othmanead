@@ -193,7 +193,7 @@ export default async function AboutPage({
 
             <div className="flex flex-wrap gap-3 mt-4">
               <a
-                href={locale === "fr" ? "/cv/ossama_elhakki_cv_fr.pdf" : "/cv/ossama_elhakki_resume_ai_engineer.pdf"}
+                href={locale === "fr" ? "/cv/othmane_aoubid_cv_fr.pdf" : "/cv/othmane_aoubid_resume_eng.pdf"}
                 download
                 className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-sm font-medium transition-all"
                 style={{ backgroundColor: "var(--primary)" }}
