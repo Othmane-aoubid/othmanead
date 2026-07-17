@@ -50,6 +50,3 @@ next-env.d.ts
 
 # CV workspace — keep ONLY the public FR CV + EN resume tracked.
 # All other CVs / cover letters (incl. company-specific ones) stay private/local.
-public/cv/*
-!public/cv/ossama_elhakki_cv_fr.pdf
-!public/cv/ossama_elhakki_resume_ai_engineer.pdf
