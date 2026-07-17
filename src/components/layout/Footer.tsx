@@ -6,7 +6,20 @@ import { Mail, MapPin, Phone, ExternalLink, MessageCircle } from "lucide-react";
 import { GithubIcon, LinkedInIcon, KaggleIcon } from "@/components/ui/SocialIcons";
 import { GITHUB_URL, LINKEDIN_URL, KAGGLE_URL, EMAIL, PHONE } from "@/lib/data";
 
-const skills = ["Python", "PyTorch", "LightGBM", "YOLOv8", "n8n", "FastAPI", "Next.js", "Docker", "Stable Diffusion", "RAG"];
+const skills = [
+  "Next.js", 
+  "vuejs",
+  "TypeScript", // Replaces JavaScript to show modern frontend standards
+  "FastAPI", 
+  "Python", 
+  "PostgreSQL", // Crucial addition based on your CMS and Dashboard projects
+  "Docker", 
+  "PyTorch", 
+  "Stable Diffusion", 
+  "RAG",
+  "Redis",
+  "Nginx"     // Shows you understand caching and backend performance
+];
 
 export default function Footer() {
   const t = useTranslations();
