@@ -1,7 +1,7 @@
 /* TEAM */
-Name: Ossama Elhakki
+Name: Othmane Aoubid
 Role: AI Engineer & ML Systems Builder
-Email: ossamaelhakki@gmail.com
+Email: othmaneaoubid11@gmail.com
 LinkedIn: https://www.linkedin.com/in/elhakki-ossama-985b64190/
 GitHub: https://github.com/ELHAKKI-OSSAMA
 Kaggle: https://www.kaggle.com/ossamaelhakk/code
@@ -12,4 +12,4 @@ Last update: 2025/05/20
 Language: English, French, Arabic
 Doctype: HTML5
 Technologies: Next.js, TypeScript, Tailwind CSS, next-intl
-Hosted on: ossamaelhakki.com
+Hosted on: Othmane Aoubid

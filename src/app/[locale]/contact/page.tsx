@@ -57,9 +57,8 @@ export default function ContactPage() {
   ];
 
   const socials = [
-    { icon: GithubIcon,   href: GITHUB_URL,   label: "GitHub",   value: "ELHAKKI-OSSAMA" },
-    { icon: LinkedInIcon, href: LINKEDIN_URL,  label: "LinkedIn", value: "Ossama Elhakki"  },
-    { icon: KaggleIcon,   href: KAGGLE_URL,    label: "Kaggle",   value: "ossamaelhakk"   },
+    { icon: GithubIcon,   href: GITHUB_URL,   label: "GitHub",   value: "Othmane-aoubid" },
+    { icon: LinkedInIcon, href: LINKEDIN_URL,  label: "LinkedIn", value: "Othmane Aoubid"  },
   ];
 
   const inputCls = "w-full px-4 py-3 rounded-xl border text-sm outline-none transition-colors focus:border-[var(--primary)]";

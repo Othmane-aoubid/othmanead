@@ -14,25 +14,22 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   const navPages = [
-    { slug: "projects",  label: t("nav.projects")  },
-    { slug: "services",  label: t("nav.services")  },
-    { slug: "learning",  label: t("nav.learning")  },
-    { slug: "games",     label: t("nav.games")     },
-    { slug: "blog",      label: t("nav.blog")      },
-    { slug: "about",     label: t("nav.about")     },
-    { slug: "contact",   label: t("nav.contact")   },
+    { slug: "projects", label: t("nav.projects") },
+    { slug: "services", label: t("nav.services") },
+    { slug: "about", label: t("nav.about") },
+    { slug: "contact", label: t("nav.contact") },
   ];
 
   const socials = [
-    { icon: GithubIcon,   href: GITHUB_URL,  label: "GitHub",   sub: "ELHAKKI-OSSAMA" },
-    { icon: LinkedInIcon, href: LINKEDIN_URL, label: "LinkedIn", sub: "Ossama Elhakki"  },
-    { icon: KaggleIcon,   href: KAGGLE_URL,   label: "Kaggle",   sub: "ossamaelhakk"   },
+    { icon: GithubIcon, href: GITHUB_URL, label: "GitHub", sub: "Othmane-aoubid" },
+    { icon: LinkedInIcon, href: LINKEDIN_URL, label: "LinkedIn", sub: "Othmane Aoubid" },
+    // { icon: KaggleIcon,   href: KAGGLE_URL,   label: "Kaggle",   sub: "ossamaelhakk"   },
   ];
 
-  const availLabel  = locale === "fr" ? "Disponible" : locale === "ar" ? "متاح الآن" : "Available";
+  const availLabel = locale === "fr" ? "Disponible" : locale === "ar" ? "متاح الآن" : "Available";
   const statusLabel = locale === "fr" ? "Ouvert aux offres freelance & temps plein"
-                    : locale === "ar" ? "مفتوح للعمل الحر والتوظيف الكامل"
-                    : "Open to freelance & full-time opportunities";
+    : locale === "ar" ? "مفتوح للعمل الحر والتوظيف الكامل"
+      : "Open to freelance & full-time opportunities";
 
   return (
     <footer
@@ -64,7 +61,7 @@ export default function Footer() {
 
           {/* Brand + bio */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <div className="text-xl font-bold gradient-text mb-3">ossamaelhakki.com</div>
+            <div className="text-xl font-bold gradient-text mb-3">Othmane Aoubid</div>
             <p className="text-sm leading-relaxed mb-4" style={{ color: "var(--text-secondary)" }}>
               {t("footer.brand_desc")}
             </p>
@@ -154,16 +151,13 @@ export default function Footer() {
           style={{ borderColor: "var(--border)" }}
         >
           <div className="flex flex-col sm:flex-row items-center gap-2 text-xs" style={{ color: "var(--text-muted)" }}>
-            <span>© {year} Ossama Elhakki. {t("footer.rights")}</span>
+            <span>© {year} Othmane Aoubid. {t("footer.rights")}</span>
             <span className="hidden sm:block opacity-30">·</span>
             <span className="opacity-50">{t("footer.built")}</span>
           </div>
           <div className="flex items-center gap-4 text-xs" style={{ color: "var(--text-muted)" }}>
             <Link href={`/${locale}/projects`} className="hover:text-[var(--primary)] transition-colors">
               {locale === "ar" ? "المشاريع" : locale === "fr" ? "Projets" : "Projects"}
-            </Link>
-            <Link href={`/${locale}/blog`} className="hover:text-[var(--primary)] transition-colors">
-              {locale === "ar" ? "المدونة" : locale === "fr" ? "Blog" : "Blog"}
             </Link>
             <Link href={`/${locale}/contact`} className="hover:text-[var(--primary)] transition-colors">
               {locale === "ar" ? "تواصل" : locale === "fr" ? "Contact" : "Contact"}

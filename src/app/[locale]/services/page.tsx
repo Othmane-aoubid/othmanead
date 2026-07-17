@@ -12,11 +12,27 @@ export default function ServicesPage() {
   const t = useTranslations("services");
   const locale = useLocale();
 
-  const availableFor = [
-    { en: "Full-time remote positions", fr: "Postes à distance", ar: "وظائف عن بُعد" },
-    { en: "Freelance ML projects", fr: "Projets ML freelance", ar: "مشاريع حرة" },
-    { en: "Consulting & audits", fr: "Conseil & audits", ar: "الاستشارات" },
-    { en: "AI workshops (FR/AR)", fr: "Ateliers IA (FR/AR)", ar: "ورش عمل الذكاء الاصطناعي" },
+ const availableFor = [
+    {
+      en: "Full-time Full-Stack or Backend positions",
+      fr: "Postes à temps plein en développement Full-Stack ou Backend",
+      ar: "وظائف بدوام كامل في تطوير البرمجيات Full-Stack أو Backend",
+    },
+    {
+      en: "Freelance Web & Software Development",
+      fr: "Projets freelance en développement Web et Logiciel",
+      ar: "مشاريع حرة في تطوير الويب والبرمجيات",
+    },
+    {
+      en: "Backend API & System Architecture",
+      fr: "Développement d'API Backend et architecture logicielle",
+      ar: "تطوير واجهات API وتصميم الأنظمة الخلفية",
+    },
+    {
+      en: "Cloud, Deployment & Cybersecurity",
+      fr: "Cloud, Déploiement et Cybersécurité",
+      ar: "الحوسبة السحابية، النشر، والأمن السيبراني",
+    },
   ];
 
   return (

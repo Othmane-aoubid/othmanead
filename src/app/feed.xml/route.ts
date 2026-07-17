@@ -19,17 +19,17 @@ export async function GET() {
   const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ossama Elhakki — AI Engineer Blog</title>
+    <title>Othmane Aoubid — AI Engineer Blog</title>
     <link>${SITE_URL}</link>
-    <description>Deep-dive articles on machine learning, computer vision, NLP, and AI automation by Ossama Elhakki.</description>
+    <description>Deep-dive articles on machine learning, computer vision, NLP, and AI automation by Othmane Aoubid.</description>
     <language>en-us</language>
-    <managingEditor>${EMAIL} (Ossama Elhakki)</managingEditor>
-    <webMaster>${EMAIL} (Ossama Elhakki)</webMaster>
+    <managingEditor>${EMAIL} (Othmane Aoubid)</managingEditor>
+    <webMaster>${EMAIL} (Othmane Aoubid)</webMaster>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <atom:link href="${SITE_URL}/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>${SITE_URL}/og-image.png</url>
-      <title>Ossama Elhakki Blog</title>
+      <title>Othmane Aoubid Blog</title>
       <link>${SITE_URL}</link>
     </image>
     ${items}

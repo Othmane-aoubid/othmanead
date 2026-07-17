@@ -3,7 +3,6 @@ export const services = [
   {
     id: "whatsapp-agent",
     tier: "basic",
-    price: "299",
     priceType: "per_project",
     titleKey: "s1_title",
     descKey: "s1_desc",

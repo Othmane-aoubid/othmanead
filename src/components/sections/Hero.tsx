@@ -114,7 +114,7 @@ export default function Hero() {
             LinkedIn
           </a>
           <span style={{ color: "var(--border)" }}>•</span>
-          <a
+          {/* <a
             href={KAGGLE_URL}
             target="_blank"
             rel="noopener noreferrer"
@@ -123,10 +123,10 @@ export default function Hero() {
           >
             <KaggleIcon size={18} />
             Kaggle
-          </a>
+          </a> */}
           <span style={{ color: "var(--border)" }}>•</span>
           <a
-            href={locale === "fr" ? "/cv/ossama_elhakki_cv_fr.pdf" : "/cv/ossama_elhakki_resume_ai_engineer.pdf"}
+            href={locale === "fr" ? "/cv/othmane_aoubid_cv_fr.pdf" : "/cv/othmane_aoubid_resume_eng.pdf"}
             className="flex items-center gap-2 text-sm transition-colors"
             style={{ color: "var(--text-secondary)" }}
             download

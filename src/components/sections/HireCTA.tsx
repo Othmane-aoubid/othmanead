@@ -1,25 +1,27 @@
 import Link from "next/link";
 import { ArrowRight, Mail } from "lucide-react";
 
-const T: Record<string, { title: string; sub: string; primary: string; secondary: string }> = {
+const T: Record<
+  string,
+  { title: string; sub: string; primary: string; secondary?: string }
+> = {
   en: {
-    title: "Need an AI engineer or data scientist?",
-    sub: "I build custom ML models, AI agents, computer vision, and automation — from idea to production.",
-    primary: "Get in touch",
-    secondary: "View services",
-  },
-  fr: {
-    title: "Besoin d'un ingénieur IA ou data scientist ?",
-    sub: "Je conçois des modèles ML sur mesure, des agents IA, de la vision par ordinateur et de l'automatisation — de l'idée à la production.",
-    primary: "Me contacter",
-    secondary: "Voir les services",
-  },
-  ar: {
-    title: "تحتاج مهندس ذكاء اصطناعي أو عالم بيانات؟",
-    sub: "أبني نماذج تعلم آلي مخصصة، ووكلاء ذكاء اصطناعي، ورؤية حاسوب، وأتمتة — من الفكرة إلى الإنتاج.",
-    primary: "تواصل معي",
-    secondary: "الخدمات",
-  },
+  title: "Need a Full-Stack or Backend Developer?",
+  sub: "I build modern web applications, secure backends, AI-powered solutions, and scalable systems — from concept to production.",
+  primary: "Get in touch",
+},
+
+fr: {
+  title: "Besoin d'un développeur Full-Stack ou Backend ?",
+  sub: "Je développe des applications web modernes, des backends sécurisés, des solutions intégrant l'IA et des systèmes évolutifs, de la conception à la production.",
+  primary: "Me contacter",
+},
+
+ar: {
+  title: "تحتاج إلى مطور Full-Stack أو Backend؟",
+  sub: "أطوّر تطبيقات ويب حديثة، وواجهات خلفية آمنة، وحلولًا مدعومة بالذكاء الاصطناعي، وأنظمة قابلة للتوسع من الفكرة إلى الإنتاج.",
+  primary: "تواصل معي",
+},
 };
 
 /** Reusable, localized hire-me call to action. */
@@ -57,15 +59,21 @@ export default function HireCTA({ locale }: { locale: string }) {
             >
               <Mail size={16} />
               {t.primary}
-              <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+              <ArrowRight
+                size={16}
+                className="group-hover:translate-x-1 transition-transform"
+              />
             </Link>
-            <Link
+            {/* <Link
               href={`/${locale}/services`}
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border font-medium transition-all"
-              style={{ borderColor: "var(--border-strong)", color: "var(--text-primary)" }}
+              style={{
+                borderColor: "var(--border-strong)",
+                color: "var(--text-primary)",
+              }}
             >
               {t.secondary}
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

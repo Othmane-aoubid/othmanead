@@ -1,43 +1,103 @@
 // ─── Skills ────────────────────────────────────────────────────────────────────
 export const skillGroups = [
   {
-    key: "ml",
+    key: "frontend",
     color: "#6c63ff",
-    skills: ["Python", "Scikit-learn", "LightGBM", "XGBoost", "CatBoost", "Optuna", "SHAP", "Pandas", "NumPy"],
-  },
-  {
-    key: "dl",
-    color: "#ec4899",
-    skills: ["PyTorch", "TensorFlow", "U-Net", "EfficientNet", "DCGAN", "Transformers", "BERT", "LSTM"],
-  },
-  {
-    key: "cv",
-    color: "#8b5cf6",
-    skills: ["YOLOv8", "OpenCV", "Stable Diffusion", "ControlNet", "Segmentation", "Face Recognition", "Albumentations"],
-  },
-  {
-    key: "nlp",
-    color: "#00d4aa",
-    skills: ["BERT", "HuggingFace", "Seq2Seq", "TF-IDF", "Sentiment Analysis", "NMT", "Text Generation"],
-  },
-  {
-    key: "automation",
-    color: "#06b6d4",
-    skills: ["n8n", "Ollama", "LLM Agents", "Pinecone", "RAG", "WhatsApp API", "FastAPI", "Apify"],
+    skills: [
+      "Vue.js",
+      "Next.js",
+      "JavaScript",
+      "Tailwind CSS",
+      "Material UI",
+      "Figma",
+      "WordPress",
+      "SEO"
+    ],
   },
   {
     key: "backend",
+    color: "#ec4899",
+    skills: [
+      "FastAPI",
+      "Python",
+      "PostgreSQL",
+      "SQLAlchemy",
+      "Firebase",
+      "REST APIs",
+      "Async Processing"
+    ],
+  },
+  {
+    key: "ai",
+    color: "#00d4aa",
+    skills: [
+      "AI Image Generation",
+      "Inference APIs",
+      "Model Integration",
+      "Image Processing",
+      "MVP Architecture",
+      "Production Backend"
+    ],
+  },
+  {
+    key: "cybersecurity",
     color: "#f59e0b",
-    skills: ["Java", "Spring Boot", "TypeScript", "Next.js", "Vue.js", "REST APIs", "gRPC", "Kafka"],
+    skills: [
+      "ELK Stack",
+      "NGFW",
+      "WAF",
+      "XSOAR",
+      "Threat Detection",
+      "Log Correlation",
+      "Vulnerability Assessment",
+      "SOC Engineering"
+    ],
   },
   {
-    key: "data",
+    key: "cloud",
+    color: "#8b5cf6",
+    skills: [
+      "Linux",
+      "Nginx",
+      "Docker",
+      "Cloud Computing",
+      "System Administration",
+      "Reverse Proxy",
+      "Production Deployment"
+    ],
+  },
+  {
+    key: "monitoring",
+    color: "#06b6d4",
+    skills: [
+      "IoT Monitoring",
+      "Real-Time Dashboards",
+      "Telemetry",
+      "Predictive",
+      "Trident",
+      "Data Visualization"
+    ],
+  },
+  {
+    key: "database",
     color: "#10b981",
-    skills: ["PostgreSQL", "Supabase", "MongoDB", "SQL", "ETL Pipelines", "Data Visualization", "Tableau"],
+    skills: [
+      "PostgreSQL",
+      "MySQL",
+      "Firebase",
+      "SQL"
+    ],
   },
   {
-    key: "devops",
+    key: "tools",
     color: "#64748b",
-    skills: ["Docker", "Nginx", "Git", "CI/CD", "OAuth2/Keycloak", "MLOps", "CUDA", "ONNX Export"],
+    skills: [
+      "Git",
+      "Figma",
+      "WordPress",
+      "OpenVAS",
+      "OWASP ZAP",
+      "TisaSIEM"
+    ],
   },
 ];

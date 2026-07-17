@@ -21,8 +21,8 @@ export async function generateMetadata({
     locale,
     path: "",
     title: pick(locale, {
-      en: "Ossama Elhakki — AI Engineer & ML Systems Builder",
-      fr: "Ossama Elhakki — Ingénieur IA & Concepteur de Systèmes ML",
+      en: "Othmane Aoubid — AI Engineer & ML Systems Builder",
+      fr: "Othmane Aoubid — Ingénieur IA & Concepteur de Systèmes ML",
       ar: "أسامة الحقّي — مهندس ذكاء اصطناعي وباني أنظمة تعلم آلي",
     }),
     description: pick(locale, {
@@ -38,7 +38,7 @@ export async function generateMetadata({
       "AI Automation",
       "MLOps",
       "Morocco",
-      "Ossama Elhakki",
+      "Othmane Aoubid",
       "أسامة الحقّي",
     ],
   });
@@ -59,9 +59,8 @@ export default async function HomePage({
       <Stats />
       <FeaturedProjects />
       <SkillsSection />
-      <GamesTeaser locale={locale} />
       <ServicesCTA />
-      <FAQSection locale={locale} />
+      {/* <FAQSection locale={locale} /> */}
     </>
   );
 }

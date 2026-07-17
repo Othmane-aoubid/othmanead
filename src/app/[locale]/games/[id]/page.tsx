@@ -30,7 +30,7 @@ export async function generateMetadata({
     type: "article",
     title: `${doc.title[locale as "en"] ?? doc.title.en}`,
     description: doc.summary[locale as "en"] ?? doc.summary.en,
-    keywords: [doc.algo, "AI game", "reinforcement learning", "neuroevolution", doc.id, "Ossama Elhakki"],
+    keywords: [doc.algo, "AI game", "reinforcement learning", "neuroevolution", doc.id, "Othmane Aoubid"],
   });
 }
 

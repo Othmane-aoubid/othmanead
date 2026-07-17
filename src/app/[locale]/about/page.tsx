@@ -27,16 +27,16 @@ export async function generateMetadata({
     path: "/about",
     type: "profile",
     title: pick(locale, {
-      en: "About Ossama Elhakki — AI Engineer in Morocco",
-      fr: "À propos d'Ossama Elhakki — Ingénieur IA au Maroc",
+      en: "About Othmane Aoubid — AI Engineer in Morocco",
+      fr: "À propos d'Othmane Aoubid — Ingénieur IA au Maroc",
       ar: "نبذة عن أسامة الحقّي — مهندس ذكاء اصطناعي في المغرب",
     }),
     description: pick(locale, {
-      en: "Ossama Elhakki — AI Engineer with a Master's in Distributed Systems & AI from ENSET Morocco. 42+ ML projects across computer vision, NLP, generative AI, and AI automation.",
-      fr: "Ossama Elhakki — Ingénieur IA titulaire d'un Master en Systèmes Distribués & IA de l'ENSET Maroc. Plus de 42 projets ML en vision par ordinateur, NLP, IA générative et automatisation IA.",
+      en: "Othmane Aoubid — AI Engineer with a Master's in Distributed Systems & AI from ENSET Morocco. 42+ ML projects across computer vision, NLP, generative AI, and AI automation.",
+      fr: "Othmane Aoubid — Ingénieur IA titulaire d'un Master en Systèmes Distribués & IA de l'ENSET Maroc. Plus de 42 projets ML en vision par ordinateur, NLP, IA générative et automatisation IA.",
       ar: "أسامة الحقّي — مهندس ذكاء اصطناعي حاصل على ماجستير في الأنظمة الموزعة والذكاء الاصطناعي من ENSET المغرب. أكثر من 42 مشروع تعلم آلي في رؤية الحاسوب ومعالجة اللغات والذكاء التوليدي والأتمتة.",
     }),
-    keywords: ["Ossama Elhakki", "AI engineer Morocco", "data scientist", "ENSET", "machine learning portfolio"],
+    keywords: ["Othmane Aoubid", "AI engineer Morocco", "data scientist", "ENSET", "machine learning portfolio"],
   });
 }
 
@@ -92,25 +92,6 @@ export default async function AboutPage({
           </p>
         </div>
 
-        {/* Key numbers highlight bar */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-12">
-          {highlights.map((h) => (
-            <div
-              key={h.label}
-              className="flex items-center gap-3 p-4 rounded-2xl border"
-              style={{ backgroundColor: "var(--bg-card)", borderColor: "var(--border)" }}
-            >
-              <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: `${h.color}20` }}>
-                <h.icon size={17} style={{ color: h.color }} />
-              </div>
-              <div>
-                <div className="text-xl font-bold leading-none" style={{ color: h.color }}>{h.value}</div>
-                <div className="text-xs mt-0.5 leading-tight" style={{ color: "var(--text-muted)" }}>{h.label}</div>
-              </div>
-            </div>
-          ))}
-        </div>
-
         {/* Profile card */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
           {/* Left: avatar + info */}
@@ -123,7 +104,7 @@ export default async function AboutPage({
                 className="w-28 h-28 rounded-2xl flex items-center justify-center text-5xl font-bold text-white mx-auto mb-4"
                 style={{ background: "linear-gradient(135deg, var(--primary), var(--secondary))" }}
               >
-                OE
+                OA
               </div>
               <h2 className="font-bold text-xl mb-1" style={{ color: "var(--text-primary)" }}>
                 {PERSON.name}
@@ -194,19 +175,6 @@ export default async function AboutPage({
                 >
                   <LinkedInIcon size={13} />
                   LinkedIn
-                </a>
-                <a
-                  href={KAGGLE_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg border text-xs transition-all"
-                  style={{
-                    borderColor: "var(--border)",
-                    color: "var(--text-secondary)",
-                  }}
-                >
-                  <KaggleIcon size={13} />
-                  Kaggle
                 </a>
               </div>
             </div>
@@ -364,7 +332,7 @@ export default async function AboutPage({
         </section>
 
         {/* Certifications */}
-        <section>
+        {/* <section>
           <h2
             className="text-2xl font-bold mb-6 flex items-center gap-2"
             style={{ color: "var(--text-primary)" }}
@@ -393,7 +361,7 @@ export default async function AboutPage({
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );

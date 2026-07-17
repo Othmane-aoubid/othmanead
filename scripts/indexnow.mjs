@@ -10,7 +10,7 @@
  * Run it as a post-deploy step (CI / Vercel deploy hook / GitHub Action).
  */
 
-const HOST = "ossamaelhakki.com";
+const HOST = "Othmane Aoubid";
 const KEY = process.env.INDEXNOW_KEY || "8e4b1d7a9c2f43e6b0a5d8c1f6e3a92b";
 const SITE = `https://${HOST}`;
 // Where to read the sitemap from (override for local testing).

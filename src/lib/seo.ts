@@ -18,7 +18,7 @@ const OG_SUBTITLE: Record<Locale, string> = {
 
 /** Build a dynamic, localized Open Graph image URL for a page. */
 function ogImageUrl(title: string, subtitle: string): string {
-  const t = title.replace(/\s*\|\s*Ossama Elhakki.*$/i, "").slice(0, 110);
+  const t = title.replace(/\s*\|\s*Othmane Aoubid.*$/i, "").slice(0, 110);
   return `${SITE_URL}/api/og?title=${encodeURIComponent(t)}&subtitle=${encodeURIComponent(subtitle)}`;
 }
 
@@ -77,7 +77,7 @@ export function buildMetadata({
       title,
       description,
       url,
-      siteName: "Ossama Elhakki — AI Engineer",
+      siteName: "Othmane Aoubid — AI Engineer",
       locale: ogLocale,
       alternateLocale: LOCALES.filter((l) => l !== locale).map((l) => OG_LOCALE[l]),
       images: [{ url: absImage, width: 1200, height: 630, alt: title }],

@@ -24,17 +24,16 @@ const categoryColors: Record<string, string> = {
 };
 
 const filters: Array<{ key: string; cat: ProjectCategory | "all" }> = [
-  { key: "filter_all",        cat: "all"        },
-  { key: "filter_fraud",      cat: "fraud"      },
-  { key: "filter_cv",         cat: "cv"         },
-  { key: "filter_nlp",        cat: "nlp"        },
-  { key: "filter_medical",    cat: "medical"    },
-  { key: "filter_timeseries", cat: "timeseries" },
-  { key: "filter_genai",      cat: "genai"      },
-  { key: "filter_agents",     cat: "agents"     },
-  { key: "filter_rl",         cat: "rl"         },
-  { key: "filter_backend",    cat: "backend"    },
-  { key: "filter_deployment", cat: "deployment" },
+  { key: "filter_all",          cat: "all" },
+  { key: "filter_web",          cat: "web" },
+  { key: "filter_genai",        cat: "genai" },
+  { key: "filter_backend",      cat: "backend" },
+  { key: "filter_deployment",   cat: "deployment" },
+  { key: "filter_productivity", cat: "productivity" },
+  { key: "filter_dashboard",    cat: "dashboard" },
+  { key: "filter_cms",          cat: "cms" },
+  { key: "filter_fullstack",    cat: "fullstack" },
+  { key: "filter_security",     cat: "security" },
 ];
 
 function matchesSearch(project: typeof projects[0], query: string) {
@@ -288,11 +287,11 @@ export default function ProjectsPage() {
                         {tf("view_code")}
                       </a>
                     )}
-                    {projectImages[project.id] && (
+                    {/* {projectImages[project.id] && (
                       <span className="ms-auto text-[10px]" style={{ color: "var(--text-faint, var(--text-muted))" }}>
                         {projectImages[project.id].length} {t("charts")}
                       </span>
-                    )}
+                    )} */}
                   </div>
                 </div>
               );

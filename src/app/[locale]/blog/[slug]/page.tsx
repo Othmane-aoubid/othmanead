@@ -42,7 +42,7 @@ export async function generateMetadata({
       modifiedTime: post.date,
       tags: post.tags,
     }),
-    authors: [{ name: "Ossama Elhakki", url: SITE_URL }],
+    authors: [{ name: "Othmane Aoubid", url: SITE_URL }],
   };
 }
 
@@ -185,7 +185,7 @@ export default async function BlogPostPage({
                   </div>
                   <div>
                     <p className="font-semibold" style={{ color: "var(--text-primary)" }}>
-                      Ossama Elhakki
+                      Othmane Aoubid
                     </p>
                     <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
                       {t("author_bio")}

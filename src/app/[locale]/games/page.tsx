@@ -16,8 +16,8 @@ export async function generateMetadata({
     locale,
     path: "/games",
     title: pick(locale, {
-      en: "AI Game Lab — Browser Games Powered by Real AI | Ossama Elhakki",
-      fr: "Laboratoire de jeux IA — Jeux navigateur animés par de vraies IA | Ossama Elhakki",
+      en: "AI Game Lab — Browser Games Powered by Real AI | Othmane Aoubid",
+      fr: "Laboratoire de jeux IA — Jeux navigateur animés par de vraies IA | Othmane Aoubid",
       ar: "مختبر ألعاب الذكاء الاصطناعي — ألعاب متصفح تعمل بذكاء حقيقي | أسامة الحقّي",
     }),
     description: pick(locale, {

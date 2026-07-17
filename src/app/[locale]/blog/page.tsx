@@ -16,16 +16,16 @@ export async function generateMetadata({
     locale,
     path: "/blog",
     title: pick(locale, {
-      en: "Blog — AI, ML & Data Science Insights | Ossama Elhakki",
-      fr: "Blog — Articles sur l'IA, le ML et la Data Science | Ossama Elhakki",
+      en: "Blog — AI, ML & Data Science Insights | Othmane Aoubid",
+      fr: "Blog — Articles sur l'IA, le ML et la Data Science | Othmane Aoubid",
       ar: "المدونة — رؤى في الذكاء الاصطناعي والتعلم الآلي وعلم البيانات | أسامة الحقّي",
     }),
     description: pick(locale, {
-      en: "Deep-dive articles on machine learning, computer vision, NLP, AI automation, and production ML systems by Ossama Elhakki.",
-      fr: "Articles approfondis sur le machine learning, la vision par ordinateur, le NLP, l'automatisation IA et les systèmes ML en production par Ossama Elhakki.",
+      en: "Deep-dive articles on machine learning, computer vision, NLP, AI automation, and production ML systems by Othmane Aoubid.",
+      fr: "Articles approfondis sur le machine learning, la vision par ordinateur, le NLP, l'automatisation IA et les systèmes ML en production par Othmane Aoubid.",
       ar: "مقالات متعمقة في تعلم الآلة ورؤية الحاسوب ومعالجة اللغات وأتمتة الذكاء الاصطناعي وأنظمة ML الإنتاجية بقلم أسامة الحقّي.",
     }),
-    keywords: ["machine learning blog", "AI engineering articles", "MLOps", "deep learning tutorials", "Kaggle", "Ossama Elhakki"],
+    keywords: ["machine learning blog", "AI engineering articles", "MLOps", "deep learning tutorials", "Kaggle", "Othmane Aoubid"],
   });
 }
 
@@ -54,11 +54,11 @@ export default async function BlogPage({
 
   const faqItems = [
     {
-      question: "What topics does Ossama Elhakki write about?",
+      question: "What topics does Othmane Aoubid write about?",
       answer: "Machine learning, deep learning, computer vision, NLP, AI automation with n8n, production MLOps, and Kaggle competition strategies.",
     },
     {
-      question: "How often does Ossama publish new articles?",
+      question: "How often does Othmane publish new articles?",
       answer: "New technical articles are published regularly, covering hands-on ML projects, tutorial walkthroughs, and AI engineering insights.",
     },
   ];

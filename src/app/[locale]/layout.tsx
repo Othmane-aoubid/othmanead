@@ -10,12 +10,13 @@ import { GameProvider } from "@/contexts/GameContext";
 import PersistentGameOverlay from "@/components/games/PersistentGameOverlay";
 import { PersonSchema, WebsiteSchema, OrganizationSchema } from "@/components/seo/JsonLd";
 import Analytics from "@/components/analytics/Analytics";
+import { SITE_URL } from "@/lib/data";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ossamaelhakki.com"),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "Ossama Elhakki | AI Engineer & ML Systems Builder",
-    template: "%s | Ossama Elhakki",
+    default: "Othmane Aoubid | AI Engineer & ML Systems Builder",
+    template: "%s | Othmane Aoubid",
   },
   description:
     "AI Engineer specializing in ML, computer vision, NLP, and AI automation. 35+ projects. Based in Morocco. Available worldwide for remote positions.",
@@ -30,17 +31,17 @@ export const metadata: Metadata = {
     "n8n",
     "Morocco",
     "Freelance ML",
-    "Ossama Elhakki",
-    "أسامة الحقّي",
+    "Othmane Aoubid",
+    "عثمان أوبيد",
   ],
-  authors: [{ name: "Ossama Elhakki", url: "https://ossamaelhakki.com" }],
-  creator: "Ossama Elhakki",
+  authors: [{ name: "Othmane Aoubid", url: SITE_URL }],
+  creator: "Othmane Aoubid",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://ossamaelhakki.com",
-    siteName: "Ossama Elhakki | AI Engineer",
-    title: "Ossama Elhakki | AI Engineer & ML Systems Builder",
+    url: SITE_URL,
+    siteName: "Othmane Aoubid | AI Engineer",
+    title: "Othmane Aoubid | AI Engineer & ML Systems Builder",
     description:
       "AI Engineer with 35+ ML projects across fraud detection, medical imaging, NLP, and generative AI. Available worldwide.",
     images: [
@@ -48,22 +49,22 @@ export const metadata: Metadata = {
         url: "/api/og",
         width: 1200,
         height: 630,
-        alt: "Ossama Elhakki - AI Engineer & ML Systems Builder",
+        alt: "Othmane Aoubid - AI Engineer & ML Systems Builder",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ossama Elhakki | AI Engineer",
+    title: "Othmane Aoubid | AI Engineer",
     description: "AI Engineer specializing in ML, CV, NLP, and AI automation. Based in Morocco.",
     images: ["/api/og"],
   },
   alternates: {
-    canonical: "https://ossamaelhakki.com/en",
+    canonical: `${SITE_URL}/en`,
     languages: {
-      en: "https://ossamaelhakki.com/en",
-      fr: "https://ossamaelhakki.com/fr",
-      ar: "https://ossamaelhakki.com/ar",
+      en: `${SITE_URL}/en`,
+      fr: `${SITE_URL}/fr`,
+      ar: `${SITE_URL}/ar`,
     },
   },
   verification: {
@@ -111,7 +112,7 @@ export default async function LocaleLayout({
 
   return (
     <>
-      <link rel="alternate" type="application/rss+xml" title="Ossama Elhakki Blog" href="/feed.xml" />
+      <link rel="alternate" type="application/rss+xml" title="Othmane Aoubid Blog" href="/feed.xml" />
       <PersonSchema />
       <WebsiteSchema />
       <OrganizationSchema />

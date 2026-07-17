@@ -5,14 +5,13 @@ export interface ProjectImage {
 
 export const projectImages: Record<string, ProjectImage[]> = {
   // ── FEATURED ──────────────────────────────────────────────────────────────
-  "ieee-fraud": [
-    { src: "/projects/ieee-fraud/cell_007_img00.png", caption: "Class distribution — 3.5% fraud rate (20K vs 570K transactions)" },
-    { src: "/projects/ieee-fraud/cell_009_img02.png", caption: "Transaction amount (log scale) + fraud rate by ProductCD" },
-    { src: "/projects/ieee-fraud/cell_026_img04.png", caption: "LightGBM feature importance — top 30 features ranked" },
-    { src: "/projects/ieee-fraud/cell_032_img05.png", caption: "Model OOF AUC-ROC comparison — all 6 models" },
-    { src: "/projects/ieee-fraud/cell_035_img06.png", caption: "Final model rankings with confusion metrics" },
-    { src: "/projects/ieee-fraud/cell_038_img07.png", caption: "Submission fraud probability distribution" },
-  ],
+ "Clarte-Website": [
+  { src: "/projects/clarte.png", caption: "Homepage and hero section" },
+  { src: "/projects/clarte2.png", caption: "Cleaning services overview" },
+  { src: "/projects/clarte3.png", caption: "Additional service offerings" },
+  { src: "/projects/clarte4.png", caption: "Pricing plans and subscriptions" },
+  { src: "/projects/clarte5.png", caption: "About section and company stats" },
+],
 
   // ── Replaced with dedicated kaggle_output images (cleaner than notebook cells) ──
   "cancer-segmentation": [

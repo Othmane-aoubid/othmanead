@@ -13,13 +13,13 @@ export async function generateMetadata({
     locale,
     path: "/projects",
     title: pick(locale, {
-      en: "AI & Machine Learning Projects Portfolio — Ossama Elhakki",
-      fr: "Portfolio de projets IA & Machine Learning — Ossama Elhakki",
+      en: "AI & Machine Learning Projects Portfolio — Othmane Aoubid",
+      fr: "Portfolio de projets IA & Machine Learning — Othmane Aoubid",
       ar: "معرض مشاريع الذكاء الاصطناعي والتعلم الآلي — أسامة الحقّي",
     }),
     description: pick(locale, {
-      en: "42+ production-grade AI/ML projects by Ossama Elhakki across fraud detection, computer vision, NLP, generative AI, time series, and reinforcement learning — fully documented with code and results.",
-      fr: "Plus de 42 projets IA/ML de niveau production par Ossama Elhakki : détection de fraude, vision par ordinateur, NLP, IA générative, séries temporelles et apprentissage par renforcement — documentés avec code et résultats.",
+      en: "42+ production-grade AI/ML projects by Othmane Aoubid across fraud detection, computer vision, NLP, generative AI, time series, and reinforcement learning — fully documented with code and results.",
+      fr: "Plus de 42 projets IA/ML de niveau production par Othmane Aoubid : détection de fraude, vision par ordinateur, NLP, IA générative, séries temporelles et apprentissage par renforcement — documentés avec code et résultats.",
       ar: "أكثر من 42 مشروع ذكاء اصطناعي وتعلم آلي بمستوى إنتاجي من أسامة الحقّي تغطي كشف الاحتيال ورؤية الحاسوب ومعالجة اللغات والذكاء التوليدي والسلاسل الزمنية والتعلم التعزيزي — موثقة بالكود والنتائج.",
     }),
     keywords: [
@@ -28,7 +28,7 @@ export async function generateMetadata({
       "computer vision projects",
       "NLP projects",
       "Kaggle projects",
-      "Ossama Elhakki",
+      "Othmane Aoubid",
     ],
   });
 }

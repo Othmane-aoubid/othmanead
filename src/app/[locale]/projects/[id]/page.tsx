@@ -30,7 +30,7 @@ export async function generateMetadata({
   return buildMetadata({
     locale,
     path: `/projects/${id}`,
-    title: `${title} | Ossama Elhakki`,
+    title: `${title} | Othmane Aoubid`,
     description,
     type: "article",
     keywords: [...(project.tags ?? []), ...(project.techStack ?? [])].slice(0, 12),
@@ -48,6 +48,12 @@ const categoryColors: Record<string, string> = {
   rl: "#10b981",
   backend: "#64748b",
   deployment: "#f97316",
+  web: "#3b82f6",
+  productivity: "#84cc16",
+  dashboard: "#a855f7",
+  cms: "#f43f5e",
+  fullstack: "#0ea5e9",
+  security: "#eab308",
 };
 
 
@@ -151,7 +157,7 @@ export default async function ProjectDetailPage({
                 style={{ backgroundColor: accentColor }}
               >
                 <ExternalLink size={14} />
-                {t("view_kaggle")}
+                {t("view_Website")}
               </a>
             )}
             {project.githubUrl && (
@@ -185,12 +191,12 @@ export default async function ProjectDetailPage({
                 }}
               >
                 <div
-                  className="text-2xl font-bold mb-1"
+                  className="text-2xl font-bold mb-1 break-words"
                   style={{ color: accentColor }}
                 >
                   {r.value}
                 </div>
-                <div className="text-xs" style={{ color: "var(--text-muted)" }}>
+                <div className="text-xs break-words" style={{ color: "var(--text-muted)" }}>
                   {r.label}
                 </div>
               </div>

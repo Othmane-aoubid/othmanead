@@ -20,7 +20,7 @@ const cairo = Cairo({
 });
 
 export const metadata: Metadata = {
-  title: "Ossama Elhakki | AI Engineer & ML Systems Builder",
+  title: "Othmane Aoubid | AI Engineer & ML Systems Builder",
   description:
     "AI Engineer specializing in machine learning, computer vision, NLP, and AI automation agents. Based in Morocco. Available for remote positions and freelance.",
 };

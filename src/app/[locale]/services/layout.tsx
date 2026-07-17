@@ -18,8 +18,8 @@ export async function generateMetadata({
       ar: "خدمات الذكاء الاصطناعي والتعلم الآلي — نماذج مخصصة ووكلاء وأتمتة",
     }),
     description: pick(locale, {
-      en: "End-to-end AI services by Ossama Elhakki: custom machine learning models, WhatsApp AI sales agents, RAG systems, and n8n automation pipelines — delivered production-ready.",
-      fr: "Services IA de bout en bout par Ossama Elhakki : modèles de machine learning sur mesure, agents commerciaux IA WhatsApp, systèmes RAG et pipelines d'automatisation n8n — prêts pour la production.",
+      en: "End-to-end AI services by Othmane Aoubid: custom machine learning models, WhatsApp AI sales agents, RAG systems, and n8n automation pipelines — delivered production-ready.",
+      fr: "Services IA de bout en bout par Othmane Aoubid : modèles de machine learning sur mesure, agents commerciaux IA WhatsApp, systèmes RAG et pipelines d'automatisation n8n — prêts pour la production.",
       ar: "خدمات ذكاء اصطناعي شاملة من أسامة الحقّي: نماذج تعلم آلي مخصصة، ووكلاء مبيعات على واتساب، وأنظمة RAG، وخطوط أتمتة n8n — جاهزة للإنتاج.",
     }),
     keywords: [

@@ -14,8 +14,8 @@ export async function generateMetadata({
     locale,
     path: "/learning",
     title: pick(locale, {
-      en: "ML Learning Hub — Visual Machine Learning Explanations | Ossama Elhakki",
-      fr: "Centre d'apprentissage ML — Explications visuelles du machine learning | Ossama Elhakki",
+      en: "ML Learning Hub — Visual Machine Learning Explanations | Othmane Aoubid",
+      fr: "Centre d'apprentissage ML — Explications visuelles du machine learning | Othmane Aoubid",
       ar: "مركز تعلم الآلة — شروحات بصرية لتعلم الآلة | أسامة الحقّي",
     }),
     description: pick(locale, {
@@ -29,7 +29,7 @@ export async function generateMetadata({
       "gradient boosting explained",
       "neural network diagram",
       "transformers explained",
-      "Ossama Elhakki",
+      "Othmane Aoubid",
     ],
   });
 }

@@ -5,7 +5,7 @@ import { rateLimit, clientIp } from "@/lib/rateLimit";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-const HOST = "ossamaelhakki.com";
+const HOST = "Othmane Aoubid";
 const KEY = process.env.INDEXNOW_KEY || "8e4b1d7a9c2f43e6b0a5d8c1f6e3a92b";
 
 /**

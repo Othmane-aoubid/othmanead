@@ -26,9 +26,6 @@ export default function Navbar() {
     { href: `/${locale}`, label: t("home") },
     { href: `/${locale}/projects`, label: t("projects") },
     { href: `/${locale}/services`, label: t("services") },
-    { href: `/${locale}/learning`, label: t("learning") },
-    { href: `/${locale}/games`, label: t("games") },
-    { href: `/${locale}/blog`, label: t("blog") },
     { href: `/${locale}/about`, label: t("about") },
     { href: `/${locale}/contact`, label: t("contact") },
   ];
@@ -56,7 +53,7 @@ export default function Navbar() {
             href={`/${locale}`}
             className="text-xl font-bold gradient-text hover:opacity-80 transition-opacity"
           >
-            ossamaelhakki.com
+            Othmane Aoubid
           </Link>
 
           {/* Desktop nav */}

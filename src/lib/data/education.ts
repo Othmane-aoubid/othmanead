@@ -2,44 +2,77 @@
 export const education = [
   {
     id: "master",
-    degree: "Master's Degree in Distributed Systems & Artificial Intelligence",
-    degreeFr: "Master en Systèmes Distribués et Intelligence Artificielle",
-    degreeAr: "ماجستير في الأنظمة الموزعة والذكاء الاصطناعي",
-    grade: "Grade: Good (Mention: Bien)",
-    gradeFr: "Mention : Bien",
-    gradeAr: "التقدير: مستحسن",
+    degree: "Master's Degree in Big Data and Cloud Computing",
+    degreeFr: "Master en Big Data et Cloud Computing",
+    degreeAr: "ماجستير في البيانات الضخمة والحوسبة السحابية",
+
     institution: "École Normale Supérieure de l'Enseignement Technique (ENSET)",
+    institutionFr: "École Normale Supérieure de l'Enseignement Technique (ENSET)",
     institutionAr: "المدرسة العليا لأساتذة التعليم التقني (ENSET)",
+
     location: "Mohammedia, Morocco",
+    locationFr: "Mohammedia, Maroc",
     locationAr: "المحمدية، المغرب",
-    period: "09/2023 – 06/2025",
+
+    period: "2023 – 2025",
+    periodFr: "2023 – 2025",
+    periodAr: "2023 – 2025",
   },
+
+  {
+    id: "skillslab",
+    degree: "Specialization in Cyber Defense Administration",
+    degreeFr: "Spécialisation en Administration de la Cyberdéfense",
+    degreeAr: "تخصص في إدارة الدفاع السيبراني",
+
+    institution: "SkillsLab by DATAPROTECT – JobInTech",
+    institutionFr: "SkillsLab by DATAPROTECT – JobInTech",
+    institutionAr: "SkillsLab by DATAPROTECT – JobInTech",
+
+    location: "Casablanca, Morocco",
+    locationFr: "Casablanca, Maroc",
+    locationAr: "الدار البيضاء، المغرب",
+
+    period: "25 August 2025 – 15 December 2025",
+    periodFr: "25 août 2025 – 15 décembre 2025",
+    periodAr: "25 أغسطس 2025 – 15 ديسمبر 2025",
+  },
+
   {
     id: "bachelor",
-    degree: "Bachelor's Degree in Applied Mathematics",
-    degreeFr: "Licence en Mathématiques Appliquées",
-    degreeAr: "إجازة في الرياضيات التطبيقية",
-    grade: "Grade: Good (Mention: Assez Bien)",
-    gradeFr: "Mention : Assez Bien",
-    gradeAr: "التقدير: مقبول جيد",
-    institution: "Faculté des Sciences et Techniques de Mohammedia (FST)",
-    institutionAr: "كلية العلوم والتقنيات بالمحمدية (FST)",
+    degree: "Bachelor's Degree in Web and Mobile Development",
+    degreeFr: "Licence en Développement Web et Mobile",
+    degreeAr: "الإجازة في تطوير الويب وتطبيقات الهاتف المحمول",
+
+    institution: "École Normale Supérieure de l'Enseignement Technique (ENSET)",
+    institutionFr: "École Normale Supérieure de l'Enseignement Technique (ENSET)",
+    institutionAr: "المدرسة العليا لأساتذة التعليم التقني (ENSET)",
+
     location: "Mohammedia, Morocco",
+    locationFr: "Mohammedia, Maroc",
     locationAr: "المحمدية، المغرب",
-    period: "09/2020 – 07/2023",
+
+    period: "2022 – 2023",
+    periodFr: "2022 – 2023",
+    periodAr: "2022 – 2023",
   },
+
   {
-    id: "bac",
-    degree: "High School Diploma — Mathematical Sciences (A)",
-    degreeFr: "Baccalauréat — Sciences Mathématiques (A)",
-    degreeAr: "شهادة البكالوريا — العلوم الرياضية (أ)",
-    grade: "Grade: Good (Mention: Bien)",
-    gradeFr: "Mention : Bien",
-    gradeAr: "التقدير: مستحسن",
-    institution: "Lycée Hassan II",
-    institutionAr: "ثانوية الحسن الثاني",
-    location: "Benslimane, Morocco",
-    locationAr: "بنسليمان، المغرب",
-    period: "2020",
+    id: "diploma",
+    degree: "Diploma in Computer Science",
+    degreeFr: "Diplôme en Informatique",
+    degreeAr: "دبلوم في الإعلاميات",
+
+    institution: "IFIAG Vocational School",
+    institutionFr: "École Professionnelle IFIAG",
+    institutionAr: "المعهد المهني IFIAG",
+
+    location: "Casablanca, Morocco",
+    locationFr: "Casablanca, Maroc",
+    locationAr: "الدار البيضاء، المغرب",
+
+    period: "2020 – 2022",
+    periodFr: "2020 – 2022",
+    periodAr: "2020 – 2022",
   },
 ];

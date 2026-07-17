@@ -25,11 +25,11 @@ const isArabic = (s: string) => /[؀-ۿ]/.test(s);
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
-  const title = (searchParams.get("title") || "Ossama Elhakki").slice(0, 110);
+  const title = (searchParams.get("title") || "Othmane Aoubid").slice(0, 110);
   const subtitle = (searchParams.get("subtitle") || "AI Engineer & Data Scientist").slice(0, 120);
 
   const rtl = isArabic(title) || isArabic(subtitle);
-  const fontData = await loadFont(`${title} ${subtitle} ossamaelhakki.com OE`);
+  const fontData = await loadFont(`${title} ${subtitle} Othmane Aoubid OE`);
   const fonts = fontData
     ? [{ name: "Cairo", data: fontData, weight: 700 as const, style: "normal" as const }]
     : [];
@@ -117,7 +117,7 @@ export async function GET(request: NextRequest) {
           }}
         >
           <span style={{ color: "#6c63ff", fontSize: "16px", fontWeight: 600 }}>
-            ossamaelhakki.com
+            Othmane Aoubid
           </span>
         </div>
       </div>

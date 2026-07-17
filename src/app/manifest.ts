@@ -2,8 +2,8 @@ import { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Ossama Elhakki | AI Engineer",
-    short_name: "ossamaelhakki.com",
+    name: "Othmane Aoubid | AI Engineer",
+    short_name: "Othmane Aoubid",
     description:
       "AI Engineer specializing in ML, computer vision, NLP, and AI automation. Based in Morocco.",
     start_url: "/",

@@ -3,7 +3,7 @@ import Script from "next/script";
 /**
  * Privacy-friendly, env-gated analytics. Renders nothing unless configured.
  *  - Google Analytics 4:  set NEXT_PUBLIC_GA_ID         (e.g. G-XXXXXXXXXX)
- *  - Plausible:           set NEXT_PUBLIC_PLAUSIBLE_DOMAIN (e.g. ossamaelhakki.com)
+ *  - Plausible:           set NEXT_PUBLIC_PLAUSIBLE_DOMAIN (e.g. Othmane Aoubid)
  */
 export default function Analytics() {
   const ga = process.env.NEXT_PUBLIC_GA_ID;
