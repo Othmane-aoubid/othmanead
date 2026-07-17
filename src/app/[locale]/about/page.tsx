@@ -7,12 +7,10 @@ import { buildMetadata, pick } from "@/lib/seo";
 import {
   GITHUB_URL,
   LINKEDIN_URL,
-  KAGGLE_URL,
   PERSON,
   SITE_URL,
   experience,
   education,
-  certifications,
 } from "@/lib/data";
 import { ProfilePageSchema, BreadcrumbSchema } from "@/components/seo/JsonLd";
 
@@ -311,9 +309,6 @@ export default async function AboutPage({
                     </h3>
                     <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
                       {locale === "ar" ? edu.institutionAr : edu.institution} · {locale === "ar" ? edu.locationAr : edu.location}
-                    </p>
-                    <p className="text-xs mt-1" style={{ color: "var(--text-muted)" }}>
-                      {locale === "ar" ? edu.gradeAr : locale === "fr" ? edu.gradeFr : edu.grade}
                     </p>
                   </div>
                   <span
