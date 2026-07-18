@@ -1,6 +1,6 @@
 /* TEAM */
 Name: Othmane Aoubid
-Role: AI Engineer & ML Systems Builder
+Role: Full-Stack Developer & Cloud Engineer
 Email: othmaneaoubid11@gmail.com
 LinkedIn: https://www.linkedin.com/in/elhakki-ossama-985b64190/
 GitHub: https://github.com/ELHAKKI-OSSAMA

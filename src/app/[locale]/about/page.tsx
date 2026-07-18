@@ -25,16 +25,16 @@ export async function generateMetadata({
     path: "/about",
     type: "profile",
     title: pick(locale, {
-      en: "About Othmane Aoubid — AI Engineer in Morocco",
-      fr: "À propos d'Othmane Aoubid — Ingénieur IA au Maroc",
-      ar: "نبذة عن أسامة الحقّي — مهندس ذكاء اصطناعي في المغرب",
+      en: "About Othmane Aoubid — Full-Stack Developer & Cloud Engineer in Morocco",
+      fr: "À propos d'Othmane Aoubid — Développeur Full-Stack & Ingénieur Cloud au Maroc",
+      ar: "نبذة عن عثمان أوبيد — مطور برمجيات ومهندس حوسبة سحابية في المغرب",
     }),
     description: pick(locale, {
-      en: "Othmane Aoubid — AI Engineer with a Master's in Distributed Systems & AI from ENSET Morocco. 42+ ML projects across computer vision, NLP, generative AI, and AI automation.",
-      fr: "Othmane Aoubid — Ingénieur IA titulaire d'un Master en Systèmes Distribués & IA de l'ENSET Maroc. Plus de 42 projets ML en vision par ordinateur, NLP, IA générative et automatisation IA.",
-      ar: "أسامة الحقّي — مهندس ذكاء اصطناعي حاصل على ماجستير في الأنظمة الموزعة والذكاء الاصطناعي من ENSET المغرب. أكثر من 42 مشروع تعلم آلي في رؤية الحاسوب ومعالجة اللغات والذكاء التوليدي والأتمتة.",
+      en: "Othmane Aoubid — Full-Stack Developer & Cloud Engineer with a Master's in Distributed Systems & AI from ENSET Morocco. Expertise in building secure web applications, scalable backend systems, and cloud-ready solutions.",
+      fr: "Othmane Aoubid — Développeur Full-Stack & Ingénieur Cloud titulaire d'un Master en Systèmes Distribués & IA de l'ENSET Maroc. Expertise dans la création d'applications web sécurisées, de systèmes backend évolutifs et de solutions cloud.",
+      ar: "عثمان أوبيد — مطور برمجيات ومهندس حوسبة سحابية حاصل على ماجستير في الأنظمة الموزعة والذكاء الاصطناعي من ENSET المغرب. خبرة في بناء تطبيقات ويب آمنة، وأنظمة خلفية قابلة للتوسع، وحلول سحابية جاهزة.",
     }),
-    keywords: ["Othmane Aoubid", "AI engineer Morocco", "data scientist", "ENSET", "machine learning portfolio"],
+    keywords: ["Othmane Aoubid", "Full-Stack Developer Morocco", "Cloud Engineer", "ENSET", "web development portfolio"],
   });
 }
 

@@ -19,9 +19,9 @@ export async function GET() {
   const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Othmane Aoubid — AI Engineer Blog</title>
+    <title>Othmane Aoubid — Full-Stack Developer & Cloud Engineer Blog</title>
     <link>${SITE_URL}</link>
-    <description>Deep-dive articles on machine learning, computer vision, NLP, and AI automation by Othmane Aoubid.</description>
+    <description>Deep-dive articles on web development, cloud infrastructure, backend systems, DevOps, and system architecture by Othmane Aoubid.</description>
     <language>en-us</language>
     <managingEditor>${EMAIL} (Othmane Aoubid)</managingEditor>
     <webMaster>${EMAIL} (Othmane Aoubid)</webMaster>

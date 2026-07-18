@@ -15,10 +15,10 @@ export function PersonSchema() {
     name: PERSON.name,
     alternateName: [PERSON.nameAr, "Othmane Aoubid"],
     jobTitle: [
-      "AI Engineer",
-      "Machine Learning Engineer",
-      "Data Scientist",
-      "AI Automation Engineer",
+      "Full-Stack Developer",
+      "Cloud Engineer",
+      "Backend Developer",
+      "Frontend Developer",
     ],
     description: PERSON.description,
     url: SITE_URL,
@@ -42,7 +42,7 @@ export function PersonSchema() {
     ],
     worksFor: {
       "@type": "Organization",
-      name: "Freelance / Independent AI Engineer",
+      name: "Freelance / Independent Full-Stack Developer",
     },
     alumniOf: [
       {
@@ -54,33 +54,31 @@ export function PersonSchema() {
     ],
     hasOccupation: {
       "@type": "Occupation",
-      name: "Full-Stack Developer based in Morocco, specializing in building secure web applications, scalable backend systems, and cloud-ready solutions. With professional experience across frontend development, backend engineering, cybersecurity, and production deployments, I combine modern technologies with practical engineering to deliver reliable software.t",
-      occupationalCategory: "15-2051.00", // Data Scientists (O*NET)
+      name: "Full-Stack Developer based in Morocco, specializing in building secure web applications, scalable backend systems, and cloud-ready solutions. With professional experience across frontend development, backend engineering, cybersecurity, and production deployments, I combine modern technologies with practical engineering to deliver reliable software.",
+      occupationalCategory: "15-1132.00", // Software Developers (O*NET)
       skills:
-        "Machine Learning, Deep Learning, Computer Vision, NLP, MLOps, AI Automation",
+        "React, Next.js, TypeScript, Node.js, Cloud Infrastructure, DevOps, Docker, Kubernetes, System Design, Database Management, API Development",
     },
     seeks: {
       "@type": "Demand",
-      name: "AI/ML engineering roles, freelance ML projects, AI automation, and consulting",
+      name: "Full-stack development roles, cloud engineering projects, web application development, and consulting",
     },
     knowsAbout: [
-      "Artificial Intelligence",
-      "Machine Learning",
-      "Data Science",
-      "Computer Vision",
-      "Natural Language Processing",
-      "Deep Learning",
-      "Generative AI",
-      "AI Automation",
-      "MLOps",
-      "Large Language Models",
-      "RAG systems",
-      "Stable Diffusion",
-      "n8n",
-      "LangChain",
-      "PyTorch",
-      "TensorFlow",
-      "Arabic NLP",
+      "Web Development",
+      "Full-Stack Development",
+      "Cloud Computing",
+      "Backend Engineering",
+      "Frontend Development",
+      "DevOps",
+      "System Architecture",
+      "Database Design",
+      "API Development",
+      "Microservices",
+      "Containerization",
+      "Cloud Infrastructure",
+      "Cybersecurity",
+      "Performance Optimization",
+      "Scalable Systems",
     ],
     hasCredential: [
       {
@@ -106,9 +104,9 @@ export function WebsiteSchema() {
     "@type": "WebSite",
     "@id": `${SITE_URL}/#website`,
     url: SITE_URL,
-    name: "Othmane Aoubid | AI Engineer",
+    name: "Othmane Aoubid | Full-Stack Developer",
     description:
-      "AI Engineer specializing in ML, computer vision, NLP, and AI automation. Based in Morocco.",
+      "Full-Stack Developer & Cloud Engineer specializing in building secure web applications, scalable backend systems, and cloud-ready solutions. Based in Morocco.",
     author: { "@id": `${SITE_URL}/#person` },
     inLanguage: ["en", "fr", "ar"],
     potentialAction: {
@@ -336,7 +334,7 @@ export function ServiceSchema({
     url,
     provider: { "@id": `${SITE_URL}/#person` },
     areaServed: "Worldwide",
-    serviceType: "AI Engineering",
+    serviceType: "Full-Stack Development",
   };
 
   return (

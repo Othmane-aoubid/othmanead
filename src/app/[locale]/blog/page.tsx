@@ -16,16 +16,16 @@ export async function generateMetadata({
     locale,
     path: "/blog",
     title: pick(locale, {
-      en: "Blog — AI, ML & Data Science Insights | Othmane Aoubid",
-      fr: "Blog — Articles sur l'IA, le ML et la Data Science | Othmane Aoubid",
-      ar: "المدونة — رؤى في الذكاء الاصطناعي والتعلم الآلي وعلم البيانات | أسامة الحقّي",
+      en: "Blog — Web Development, Cloud Engineering & System Architecture | Othmane Aoubid",
+      fr: "Blog — Développement Web, Ingénierie Cloud & Architecture Système | Othmane Aoubid",
+      ar: "المدونة — تطوير الويب وهندسة الحوسبة السحابية وهندسة الأنظمة | عثمان أوبيد",
     }),
     description: pick(locale, {
-      en: "Deep-dive articles on machine learning, computer vision, NLP, AI automation, and production ML systems by Othmane Aoubid.",
-      fr: "Articles approfondis sur le machine learning, la vision par ordinateur, le NLP, l'automatisation IA et les systèmes ML en production par Othmane Aoubid.",
-      ar: "مقالات متعمقة في تعلم الآلة ورؤية الحاسوب ومعالجة اللغات وأتمتة الذكاء الاصطناعي وأنظمة ML الإنتاجية بقلم أسامة الحقّي.",
+      en: "Deep-dive articles on web development, cloud infrastructure, backend systems, DevOps, and system architecture by Othmane Aoubid.",
+      fr: "Articles approfondis sur le développement web, l'infrastructure cloud, les systèmes backend, DevOps et l'architecture système par Othmane Aoubid.",
+      ar: "مقالات متعمقة في تطوير الويب والبنية التحتية السحابية والأنظمة الخلفية وDevOps وهندسة الأنظمة بقلم عثمان أوبيد.",
     }),
-    keywords: ["machine learning blog", "AI engineering articles", "MLOps", "deep learning tutorials", "Kaggle", "Othmane Aoubid"],
+    keywords: ["web development blog", "cloud engineering articles", "DevOps tutorials", "system architecture", "backend development", "Othmane Aoubid"],
   });
 }
 
@@ -55,11 +55,11 @@ export default async function BlogPage({
   const faqItems = [
     {
       question: "What topics does Othmane Aoubid write about?",
-      answer: "Machine learning, deep learning, computer vision, NLP, AI automation with n8n, production MLOps, and Kaggle competition strategies.",
+      answer: "Web development, cloud infrastructure, backend systems, DevOps, system architecture, and production deployment strategies.",
     },
     {
       question: "How often does Othmane publish new articles?",
-      answer: "New technical articles are published regularly, covering hands-on ML projects, tutorial walkthroughs, and AI engineering insights.",
+      answer: "New technical articles are published regularly, covering hands-on web development projects, tutorial walkthroughs, and cloud engineering insights.",
     },
   ];
 

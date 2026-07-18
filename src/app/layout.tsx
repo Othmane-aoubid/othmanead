@@ -20,9 +20,9 @@ const cairo = Cairo({
 });
 
 export const metadata: Metadata = {
-  title: "Othmane Aoubid | AI Engineer & ML Systems Builder",
+  title: "Othmane Aoubid | Full-Stack Developer & Cloud Engineer",
   description:
-    "AI Engineer specializing in machine learning, computer vision, NLP, and AI automation agents. Based in Morocco. Available for remote positions and freelance.",
+    "Full-Stack Developer & Cloud Engineer based in Morocco, specializing in building secure web applications, scalable backend systems, and cloud-ready solutions. Available for remote positions and freelance.",
 };
 
 // Runs BEFORE React — sets data-theme, dir, and lang on <html> instantly.

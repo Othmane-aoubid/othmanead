@@ -20,9 +20,9 @@ export const PERSON = {
   titleFr: "Développeur Full-Stack & Ingénieur Cloud",
   titleAr: "مطور برمجيات ومهندس حوسبة سحابية",
   description:
-    "From modern web experiences to production infrastructure, I build software that scales securely.",
+    "Full-Stack Developer & Cloud Engineer based in Morocco, specializing in building secure web applications, scalable backend systems, and cloud-ready solutions. With professional experience across frontend development, backend engineering, cybersecurity, and production deployments, I combine modern technologies with practical engineering to deliver reliable software.",
   descriptionFr:
-    " Des expériences web modernes aux infrastructures de production, je conçois des logiciels évolutifs, performants et sécurisés.",
+    "Développeur Full-Stack & Ingénieur Cloud basé au Maroc, spécialisé dans la création d'applications web sécurisées, de systèmes backend évolutifs et de solutions cloud. Avec une expérience professionnelle en développement frontend, ingénierie backend, cybersécurité et déploiement en production, je combine technologies modernes et ingénierie pratique pour livrer des logiciels fiables.",
   descriptionAr:
-    "من تطوير تجارب ويب حديثة إلى بناء بنى تحتية للإنتاج، أصمم حلولًا برمجية آمنة وقابلة للتوسع",
+    "مطور برمجيات ومهندس حوسبة سحابية مقيم في المغرب، متخصص في بناء تطبيقات ويب آمنة، وأنظمة خلفية قابلة للتوسع، وحلول سحابية جاهزة. مع خبرة مهنية في تطوير الواجهة الأمامية، وهندسة النهاية الخلفية، والأمن السيبراني، والنشر في الإنتاج، أجمع بين التقنيات الحديثة والهندسة العملية لتقديم برمجيات موثوقة.",
 };

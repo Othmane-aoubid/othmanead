@@ -13,22 +13,23 @@ export async function generateMetadata({
     locale,
     path: "/services",
     title: pick(locale, {
-      en: "AI & ML Services — Custom Models, AI Agents & Automation",
-      fr: "Services IA & ML — Modèles sur mesure, agents IA & automatisation",
-      ar: "خدمات الذكاء الاصطناعي والتعلم الآلي — نماذج مخصصة ووكلاء وأتمتة",
+      en: "Web Development & Cloud Services — Full-Stack, Backend & Infrastructure",
+      fr: "Services Développement Web & Cloud — Full-Stack, Backend & Infrastructure",
+      ar: "خدمات تطوير الويب والحوسبة السحابية — برمجيات شاملة وخلفية وبنية تحتية",
     }),
     description: pick(locale, {
-      en: "End-to-end AI services by Othmane Aoubid: custom machine learning models, WhatsApp AI sales agents, RAG systems, and n8n automation pipelines — delivered production-ready.",
-      fr: "Services IA de bout en bout par Othmane Aoubid : modèles de machine learning sur mesure, agents commerciaux IA WhatsApp, systèmes RAG et pipelines d'automatisation n8n — prêts pour la production.",
-      ar: "خدمات ذكاء اصطناعي شاملة من أسامة الحقّي: نماذج تعلم آلي مخصصة، ووكلاء مبيعات على واتساب، وأنظمة RAG، وخطوط أتمتة n8n — جاهزة للإنتاج.",
+      en: "End-to-end web development and cloud services by Othmane Aoubid: full-stack applications, backend API development, cloud infrastructure, DevOps pipelines, and system architecture — delivered production-ready.",
+      fr: "Services de développement web et cloud de bout en bout par Othmane Aoubid : applications full-stack, développement d'API backend, infrastructure cloud, pipelines DevOps et architecture système — prêts pour la production.",
+      ar: "خدمات تطوير ويب وحوسبة سحابية شاملة من عثمان أوبيد: تطبيقات برمجيات شاملة، تطوير واجهات برمجة تطبيقات خلفية، بنية تحتية سحابية، خطوط DevOps، وهندسة أنظمة — جاهزة للإنتاج.",
     }),
     keywords: [
-      "AI services Morocco",
-      "custom ML model development",
-      "WhatsApp AI agent",
-      "n8n automation",
-      "RAG system development",
-      "hire AI engineer",
+      "web development services Morocco",
+      "full-stack development",
+      "cloud infrastructure",
+      "backend API development",
+      "DevOps services",
+      "system architecture",
+      "hire full-stack developer",
     ],
   });
 }
@@ -37,8 +38,8 @@ export default function ServicesLayout({ children }: { children: React.ReactNode
   return (
     <>
       <ServiceSchema
-        name="AI Engineering & Machine Learning Services"
-        description="Custom ML models, AI sales agents, RAG systems, and n8n automation pipelines."
+        name="Full-Stack Development & Cloud Engineering Services"
+        description="Full-stack web applications, backend API development, cloud infrastructure, DevOps pipelines, and system architecture."
         url={`${SITE_URL}/services`}
       />
       {children}

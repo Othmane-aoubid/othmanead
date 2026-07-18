@@ -11,9 +11,9 @@ const OG_LOCALE: Record<Locale, string> = {
 };
 
 const OG_SUBTITLE: Record<Locale, string> = {
-  en: "Full-Stack Developer based in Morocco, specializing in building secure web applications, scalable backend systems, and cloud-ready solutions. With professional experience across frontend development, backend engineering, cybersecurity, and production deployments, I combine modern technologies with practical engineering to deliver reliable software.t · Morocco",
-  fr: "Ingénieur IA & Data Scientist · Maroc",
-  ar: "مهندس ذكاء اصطناعي وعالم بيانات · المغرب",
+  en: "Full-Stack Developer based in Morocco, specializing in building secure web applications, scalable backend systems, and cloud-ready solutions. With professional experience across frontend development, backend engineering, cybersecurity, and production deployments, I combine modern technologies with practical engineering to deliver reliable software. · Morocco",
+  fr: "Développeur Full-Stack & Ingénieur Cloud · Maroc",
+  ar: "مطور برمجيات ومهندس حوسبة سحابية · المغرب",
 };
 
 /** Build a dynamic, localized Open Graph image URL for a page. */
@@ -77,7 +77,7 @@ export function buildMetadata({
       title,
       description,
       url,
-      siteName: "Othmane Aoubid — AI Engineer",
+      siteName: "Othmane Aoubid — Full-Stack Developer",
       locale: ogLocale,
       alternateLocale: LOCALES.filter((l) => l !== locale).map((l) => OG_LOCALE[l]),
       images: [{ url: absImage, width: 1200, height: 630, alt: title }],
