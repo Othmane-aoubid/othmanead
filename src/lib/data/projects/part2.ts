@@ -2335,4 +2335,246 @@ OrderCreated، PaymentProcessed، InventoryUpdated — احتفاظ 7 أيام �
     approachFr: "Kafka orienté événements + OAuth2 Keycloak + appels sync gRPC + Spring Cloud Gateway",
     approachAr: "Kafka قائم على الأحداث + OAuth2 Keycloak + استدعاءات gRPC متزامنة + Spring Cloud Gateway",
   },
+  {
+    id: "service-landing-template",
+    title: "Service Landing Template",
+    titleFr: "Modèle de Page d'Accueil pour Services",
+    titleAr: "قالب صفحة هبوط للخدمات",
+    description: "A modern, responsive landing page template for service-based businesses. Built with Next.js, TypeScript, and Tailwind CSS, featuring internationalization support and shadcn/ui components.",
+    descriptionFr: "Un modèle de page d'accueil moderne et responsive pour les entreprises de services. Construit avec Next.js, TypeScript et Tailwind CSS, avec support d'internationalisation et composants shadcn/ui.",
+    descriptionAr: "قالب صفحة هبوط حديث ومتجاوب للشركات الخدمية. مبني باستخدام Next.js و TypeScript و Tailwind CSS، مع دعم التدويل ومكونات shadcn/ui.",
+    longDescription: `A modern, responsive landing page template for service-based businesses.
+
+**Features**
+- Modern UI/UX: Clean, professional design with smooth animations
+- Internationalization: Multi-language support using next-intl
+- Responsive Design: Fully responsive across all devices
+- Component-Based: Modular architecture with reusable components
+- TypeScript: Full type safety for better development experience
+- Tailwind CSS: Utility-first CSS framework for rapid styling
+- shadcn/ui: High-quality, accessible UI components
+
+**Tech Stack**
+- Framework: Next.js 16.2.6
+- Language: TypeScript 5.7.3
+- Styling: Tailwind CSS 4.3.3
+- UI Components: shadcn/ui
+- Icons: Lucide React
+- Internationalization: next-intl
+- Package Manager: pnpm
+
+**Getting Started**
+Prerequisites: Node.js (version 18 or higher), pnpm package manager
+
+Installation:
+\`\`\`bash
+git clone https://github.com/Othmane-aoubid/service-landing-template.git
+cd service-landing-template
+pnpm install
+\`\`\`
+
+Development:
+\`\`\`bash
+pnpm dev
+\`\`\`
+Open http://localhost:3000 in your browser to see the result.
+
+**Project Structure**
+\`\`\`
+service-landing-template/
+├── app/                    # Next.js app directory
+│   ├── globals.css        # Global styles
+│   ├── layout.tsx         # Root layout
+│   ├── not-found.tsx      # 404 page
+│   └── page.tsx           # Home page
+├── components/            # React components
+│   ├── ui/               # shadcn/ui components
+│   ├── client-wrapper.tsx
+│   ├── contact-footer.tsx
+│   ├── header.tsx
+│   ├── hero.tsx
+│   ├── language-switcher.tsx
+│   ├── pricing.tsx
+│   ├── services.tsx
+│   └── why-choose-us.tsx
+├── lib/                   # Utility libraries
+│   ├── language-context.tsx
+│   └── utils.ts
+└── public/               # Static assets
+\`\`\`
+
+**Components**
+- Header: Navigation bar with language switcher
+- Hero: Hero section with call-to-action
+- Services: Service offerings display
+- Pricing: Pricing plans and packages
+- WhyChooseUs: Features and benefits section
+- ContactFooter: Contact information and footer
+
+**Customization**
+- Adding Languages: Edit the language configuration in lib/language-context.tsx
+- Modifying Content: Update component content in the respective files under components/
+- Styling: Customize styles using Tailwind CSS classes or modify app/globals.css
+
+**License**
+This project is open source and available under the MIT License.`,
+    longDescriptionFr: `Un modèle de page d'accueil moderne et responsive pour les entreprises de services.
+
+**Fonctionnalités**
+- UI/UX moderne : Design propre et professionnel avec animations fluides
+- Internationalisation : Support multi-langues via next-intl
+- Design responsive : Entièrement responsive sur tous les appareils
+- Basé sur des composants : Architecture modulaire avec composants réutilisables
+- TypeScript : Sécurité de type complète pour une meilleure expérience de développement
+- Tailwind CSS : Framework CSS utilitaire pour un stylage rapide
+- shadcn/ui : Composants UI de haute qualité et accessibles
+
+**Stack Technique**
+- Framework : Next.js 16.2.6
+- Langage : TypeScript 5.7.3
+- Stylage : Tailwind CSS 4.3.3
+- Composants UI : shadcn/ui
+- Icônes : Lucide React
+- Internationalisation : next-intl
+- Gestionnaire de paquets : pnpm
+
+**Pour Commencer**
+Prérequis : Node.js (version 18 ou supérieur), gestionnaire de paquets pnpm
+
+Installation :
+\`\`\`bash
+git clone https://github.com/Othmane-aoubid/service-landing-template.git
+cd service-landing-template
+pnpm install
+\`\`\`
+
+Développement :
+\`\`\`bash
+pnpm dev
+\`\`\`
+Ouvrez http://localhost:3000 dans votre navigateur pour voir le résultat.
+
+**Structure du Projet**
+\`\`\`
+service-landing-template/
+├── app/                    # Répertoire app Next.js
+│   ├── globals.css        # Styles globaux
+│   ├── layout.tsx         # Layout racine
+│   ├── not-found.tsx      # Page 404
+│   └── page.tsx           # Page d'accueil
+├── components/            # Composants React
+│   ├── ui/               # Composants shadcn/ui
+│   ├── client-wrapper.tsx
+│   ├── contact-footer.tsx
+│   ├── header.tsx
+│   ├── hero.tsx
+│   ├── language-switcher.tsx
+│   ├── pricing.tsx
+│   ├── services.tsx
+│   └── why-choose-us.tsx
+├── lib/                   # Bibliothèques utilitaires
+│   ├── language-context.tsx
+│   └── utils.ts
+└── public/               # Assets statiques
+\`\`\`
+
+**Composants**
+- Header : Barre de navigation avec sélecteur de langue
+- Hero : Section héro avec appel à l'action
+- Services : Affichage des offres de services
+- Pricing : Plans et tarifs
+- WhyChooseUs : Section fonctionnalités et avantages
+- ContactFooter : Informations de contact et pied de page
+
+**Personnalisation**
+- Ajout de langues : Modifiez la configuration dans lib/language-context.tsx
+- Modification du contenu : Mettez à jour le contenu des composants dans components/
+- Stylage : Personnalisez les styles avec Tailwind CSS ou modifiez app/globals.css
+
+**Licence**
+Ce projet est open source et disponible sous la licence MIT.`,
+    longDescriptionAr: `قالب صفحة هبوط حديث ومتجاوب للشركات الخدمية.
+
+**الميزات**
+- واجهة مستخدم حديثة: تصميم نظيف واحترافي مع رسوم متحركة سلسة
+- التدويل: دعم متعدد اللغات باستخدام next-intl
+- تصميم متجاوب: متجاوب بالكامل على جميع الأجهزة
+- قائم على المكونات: بنية معيارية مع مكونات قابلة لإعادة الاستخدام
+- TypeScript: أمان كامل للأنواع لتجربة تطوير أفضل
+- Tailwind CSS: إطار عمل CSS للأدوات السريع
+- shadcn/ui: مكونات واجهة مستخدم عالية الجودة وسهلة الوصول
+
+**المكدس التقني**
+- الإطار: Next.js 16.2.6
+- اللغة: TypeScript 5.7.3
+- التنسيق: Tailwind CSS 4.3.3
+- مكونات واجهة المستخدم: shadcn/ui
+- الأيقونات: Lucide React
+- التدويل: next-intl
+- مدير الحزم: pnpm
+
+**البدء**
+المتطلبات: Node.js (الإصدار 18 أو أعلى)، مدير الحزم pnpm
+
+التثبيت:
+\`\`\`bash
+git clone https://github.com/Othmane-aoubid/service-landing-template.git
+cd service-landing-template
+pnpm install
+\`\`\`
+
+التطوير:
+\`\`\`bash
+pnpm dev
+\`\`\`
+افتح http://localhost:3000 في متصفحك لرؤية النتيجة.
+
+**بنية المشروع**
+\`\`\`
+service-landing-template/
+├── app/                    # دليل تطبيق Next.js
+│   ├── globals.css        # الأنماط العامة
+│   ├── layout.tsx         # التخطيط الجذري
+│   ├── not-found.tsx      # صفحة 404
+│   └── page.tsx           # الصفحة الرئيسية
+├── components/            # مكونات React
+│   ├── ui/               # مكونات shadcn/ui
+│   ├── client-wrapper.tsx
+│   ├── contact-footer.tsx
+│   ├── header.tsx
+│   ├── hero.tsx
+│   ├── language-switcher.tsx
+│   ├── pricing.tsx
+│   ├── services.tsx
+│   └── why-choose-us.tsx
+├── lib/                   # المكتبات المساعدة
+│   ├── language-context.tsx
+│   └── utils.ts
+└── public/               # الأصول الثابتة
+\`\`\`
+
+**المكونات**
+- Header: شريط التنقل مع مبدل اللغة
+- Hero: قسم البطل مع دعوة للعمل
+- Services: عرض عروض الخدمات
+- Pricing: الخطط والأسعار
+- WhyChooseUs: قسم الميزات والفوائد
+- ContactFooter: معلومات الاتصال والتذييل
+
+**التخصيص**
+- إضافة لغات: عدّل التكوين في lib/language-context.tsx
+- تعديل المحتوى: حدّث محتوى المكونات في components/
+- التنسيق: خصّص الأنماط باستخدام Tailwind CSS أو عدّل app/globals.css
+
+**الترخيص**
+هذا المشروع مفتوح المصدر ومتاح تحت ترخيص MIT.`,
+    category: ["web", "fullstack"],
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "next-intl", "Lucide React", "Responsive Design", "Internationalization"],
+    githubUrl: "https://github.com/Othmane-aoubid/service-landing-template",
+    featured: true,
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "next-intl", "Lucide React", "pnpm"],
+    approach: "Modern landing page with i18n support, component-based architecture, and shadcn/ui components",
+    approachFr: "Page d'accueil moderne avec support i18n, architecture basée sur des composants et composants shadcn/ui",
+    approachAr: "صفحة هبوط حديثة مع دعم i18n، بنية قائمة على المكونات ومكونات shadcn/ui",
+  },
 ];

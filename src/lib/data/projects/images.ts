@@ -328,4 +328,10 @@ export const projectImages: Record<string, ProjectImage[]> = {
     { src: "/projects/yolo-parking/BoxPR_curve.png",                caption: "Precision-Recall curve — val mAP50=0.994" },
     { src: "/projects/yolo-parking/BoxF1_curve.png",                caption: "F1-score vs confidence threshold — early stopped at epoch 74" },
   ],
+
+  "service-landing-template": [
+    { src: "/localbusines1 .png", caption: "Hero section with call-to-action" },
+    { src: "/localbusines2.png", caption: "Services section showcasing offerings" },
+    { src: "/locabusiness3.png", caption: "Pricing plans and contact section" },
+  ],
 };
