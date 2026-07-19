@@ -15,6 +15,7 @@
     "@radix-ui/react-tabs": "^1.1.13",
     "@types/katex": "^0.16.8",
     "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.0.0",
     "framer-motion": "^12.39.0",
     "fuse.js": "^7.3.0",
     "katex": "^0.16.47",
