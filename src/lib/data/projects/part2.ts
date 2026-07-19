@@ -2570,6 +2570,7 @@ service-landing-template/
 هذا المشروع مفتوح المصدر ومتاح تحت ترخيص MIT.`,
     category: ["web", "fullstack"],
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "next-intl", "Lucide React", "Responsive Design", "Internationalization"],
+    kaggleUrl: "https://service-landing-template-gray.vercel.app/",
     githubUrl: "https://github.com/Othmane-aoubid/service-landing-template",
     featured: true,
     techStack: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "next-intl", "Lucide React", "pnpm"],
