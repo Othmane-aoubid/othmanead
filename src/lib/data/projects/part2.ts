@@ -2578,4 +2578,216 @@ service-landing-template/
     approachFr: "Page d'accueil moderne avec support i18n, architecture basée sur des composants et composants shadcn/ui",
     approachAr: "صفحة هبوط حديثة مع دعم i18n، بنية قائمة على المكونات ومكونات shadcn/ui",
   },
+  {
+    id: "smart-menu",
+    title: "Smart Menu & Order System",
+    titleFr: "Système de Menu Intelligent & Commande",
+    titleAr: "نظام القائمة الذكية والطلب",
+    description: "A modern, multilingual café menu and ordering system built with Next.js, featuring QR code table integration and WhatsApp ordering.",
+    descriptionFr: "Un système de menu et de commande de café moderne et multilingue construit avec Next.js, avec intégration QR code pour les tables et commande via WhatsApp.",
+    descriptionAr: "نظام قائمة وطلب مقهى حديث متعدد اللغات مبني باستخدام Next.js، مع تكامل رمز QR للطاولات والطلب عبر WhatsApp.",
+    longDescription: `A modern, multilingual café menu and ordering system built with Next.js, featuring QR code table integration and WhatsApp ordering.
+
+**Features**
+- Multilingual Support: English, French, and Arabic with RTL support
+- QR Code Table Integration: Generate unique QR codes for each table
+- WhatsApp Ordering: Send orders directly to WhatsApp
+- Responsive Design: Works seamlessly on mobile, tablet, and desktop
+- Dark Mode Support: Automatic theme switching based on system preferences
+- Shopping Cart: Add items, adjust quantities, and manage orders
+- Category Filtering: Browse menu items by category
+
+**Tech Stack**
+- Framework: Next.js 16
+- Styling: Tailwind CSS 4
+- UI Components: shadcn/ui
+- Icons: Lucide React
+- QR Codes: react-qr-code
+- Language: TypeScript
+
+**Getting Started**
+Prerequisites: Node.js 18+, pnpm (recommended) or npm/yarn
+
+Installation:
+\`\`\`bash
+pnpm install
+pnpm dev
+\`\`\`
+Open http://localhost:3000 in your browser.
+
+Build for Production:
+\`\`\`bash
+pnpm build
+pnpm start
+\`\`\`
+
+**Project Structure**
+\`\`\`
+smart-menu-and-order/
+├── src/
+│   ├── app/              # Next.js app directory
+│   ├── components/       # React components
+│   │   ├── features/    # Feature-specific components
+│   │   └── ui/          # shadcn/ui components
+│   ├── lib/             # Utility libraries and contexts
+│   └── globals.css      # Global styles
+├── public/              # Static assets
+└── package.json
+\`\`\`
+
+**Usage**
+For Customers:
+- Scan the QR code at your table
+- Browse the menu and select items
+- Add items to your cart
+- Review your order and send via WhatsApp
+
+For Staff:
+- Click the QR code icon (bottom right) to access the admin panel
+- Enter a table number to generate a unique QR code
+- Download and print the QR code for table placement
+
+**Configuration**
+- WhatsApp Number: Update in src/lib/data.ts
+- Menu Items: Add or modify in src/lib/data.ts
+- Languages: Translations managed in src/lib/translations.ts (English, French, Arabic)`,
+    longDescriptionFr: `Un système de menu et de commande de café moderne et multilingue construit avec Next.js, avec intégration QR code pour les tables et commande via WhatsApp.
+
+**Fonctionnalités**
+- Support multilingue : Anglais, français et arabe avec support RTL
+- Intégration QR code pour les tables : Générez des QR codes uniques pour chaque table
+- Commande WhatsApp : Envoyez les commandes directement via WhatsApp
+- Design responsive : Fonctionne parfaitement sur mobile, tablette et bureau
+- Support mode sombre : Changement automatique de thème selon les préférences système
+- Panier d'achat : Ajoutez des articles, ajustez les quantités et gérez les commandes
+- Filtrage par catégorie : Parcourez les articles du menu par catégorie
+
+**Stack Technique**
+- Framework : Next.js 16
+- Stylage : Tailwind CSS 4
+- Composants UI : shadcn/ui
+- Icônes : Lucide React
+- QR Codes : react-qr-code
+- Langage : TypeScript
+
+**Pour Commencer**
+Prérequis : Node.js 18+, pnpm (recommandé) ou npm/yarn
+
+Installation :
+\`\`\`bash
+pnpm install
+pnpm dev
+\`\`\`
+Ouvrez http://localhost:3000 dans votre navigateur.
+
+Build pour la production :
+\`\`\`bash
+pnpm build
+pnpm start
+\`\`\`
+
+**Structure du Projet**
+\`\`\`
+smart-menu-and-order/
+├── src/
+│   ├── app/              # Répertoire app Next.js
+│   ├── components/       # Composants React
+│   │   ├── features/    # Composants spécifiques aux fonctionnalités
+│   │   └── ui/          # Composants shadcn/ui
+│   ├── lib/             # Bibliothèques utilitaires et contextes
+│   └── globals.css      # Styles globaux
+├── public/              # Assets statiques
+└── package.json
+\`\`\`
+
+**Utilisation**
+Pour les clients :
+- Scannez le QR code à votre table
+- Parcourez le menu et sélectionnez des articles
+- Ajoutez des articles à votre panier
+- Revoyez votre commande et envoyez via WhatsApp
+
+Pour le personnel :
+- Cliquez sur l'icône QR code (en bas à droite) pour accéder au panneau admin
+- Entrez un numéro de table pour générer un QR code unique
+- Téléchargez et imprimez le QR code pour le placement à table
+
+**Configuration**
+- Numéro WhatsApp : Mettez à jour dans src/lib/data.ts
+- Articles du menu : Ajoutez ou modifiez dans src/lib/data.ts
+- Langues : Traductions gérées dans src/lib/translations.ts (Anglais, Français, Arabe)`,
+    longDescriptionAr: `نظام قائمة وطلب مقهى حديث متعدد اللغات مبني باستخدام Next.js، مع تكامل رمز QR للطاولات والطلب عبر WhatsApp.
+
+**الميزات**
+- دعم متعدد اللغات: الإنجليزية والفرنسية والعربية مع دعم RTL
+- تكامل رمز QR للطاولات: إنشاء رموز QR فريدة لكل طاولة
+- الطلب عبر WhatsApp: إرسال الطلبات مباشرة عبر WhatsApp
+- تصميم متجاوب: يعمل بسلاسة على الهاتف المحمول والتابلت وسطح المكتب
+- دعم الوضع الداكن: التبديل التلقائي للسمة بناءً على تفضيلات النظام
+- سلة التسوق: إضافة العناصر، تعديل الكميات وإدارة الطلبات
+- التصفية حسب الفئة: تصفح عناصر القائمة حسب الفئة
+
+**المكدس التقني**
+- الإطار: Next.js 16
+- التنسيق: Tailwind CSS 4
+- مكونات واجهة المستخدم: shadcn/ui
+- الأيقونات: Lucide React
+- رموز QR: react-qr-code
+- اللغة: TypeScript
+
+**البدء**
+المتطلبات: Node.js 18+، pnpm (موصى به) أو npm/yarn
+
+التثبيت:
+\`\`\`bash
+pnpm install
+pnpm dev
+\`\`\`
+افتح http://localhost:3000 في متصفحك.
+
+البناء للإنتاج:
+\`\`\`bash
+pnpm build
+pnpm start
+\`\`\`
+
+**بنية المشروع**
+\`\`\`
+smart-menu-and-order/
+├── src/
+│   ├── app/              # دليل تطبيق Next.js
+│   ├── components/       # مكونات React
+│   │   ├── features/    # مكونات ميزات محددة
+│   │   └── ui/          # مكونات shadcn/ui
+│   ├── lib/             # المكتبات المساعدة والسياقات
+│   └── globals.css      # الأنماط العامة
+├── public/              # الأصول الثابتة
+└── package.json
+\`\`\`
+
+**الاستخدام**
+للعملاء:
+- امسح رمز QR على طاولتك
+- تصفح القائمة واختر العناصر
+- أضف العناصر إلى سلتك
+- راجع طلبك وأرسله عبر WhatsApp
+
+للموظفين:
+- انقر على أيقونة رمز QR (أسفل اليمين) للوصول إلى لوحة المشرف
+- أدخل رقم طاولة لإنشاء رمز QR فريد
+- قم بتنزيل وطباعة رمز QR لوضعه على الطاولة
+
+**التكوين**
+- رقم WhatsApp: حدّث في src/lib/data.ts
+- عناصر القائمة: أضف أو عدّل في src/lib/data.ts
+- اللغات: الترجمات مُدارة في src/lib/translations.ts (الإنجليزية، الفرنسية، العربية)`,
+    category: ["web", "fullstack"],
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "QR Code", "WhatsApp", "Responsive Design", "Internationalization", "RTL"],
+    githubUrl: "https://github.com/Othmane-aoubid/smart-menu",
+    featured: true,
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "Lucide React", "react-qr-code"],
+    approach: "Multilingual café menu system with QR code table integration and WhatsApp ordering",
+    approachFr: "Système de menu de café multilingue avec intégration QR code pour les tables et commande WhatsApp",
+    approachAr: "نظام قائمة مقهى متعدد اللغات مع تكامل رمز QR للطاولات والطلب عبر WhatsApp",
+  },
 ];

@@ -334,4 +334,14 @@ export const projectImages: Record<string, ProjectImage[]> = {
     { src: "/localbusines2.png", caption: "Services section showcasing offerings" },
     { src: "/locabusiness3.png", caption: "Pricing plans and contact section" },
   ],
+
+  "smart-menu": [
+    { src: "/cafeemenu1.png", caption: "Menu homepage with category selection" },
+    { src: "/cafeemenu2.png", caption: "Menu items display with prices" },
+    { src: "/cafeemenu3.png", caption: "Shopping cart with selected items" },
+    { src: "/cafeemenu4.png", caption: "WhatsApp order confirmation" },
+    { src: "/cafeemenu5.png", caption: "QR code generation for tables" },
+    { src: "/cafeemenu6.png", caption: "Admin panel for table management" },
+    { src: "/cafeemenu7.png", caption: "Dark mode interface" },
+  ],
 };
