@@ -1,4 +1,4 @@
 
-> ossama-portfolio@0.1.0 dev
+> othmane-portfolio@0.1.0 dev
 > next dev --webpack
 

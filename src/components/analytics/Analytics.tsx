@@ -1,27 +1,23 @@
 import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 /**
  * Privacy-friendly, env-gated analytics. Renders nothing unless configured.
- *  - Google Analytics 4:  set NEXT_PUBLIC_GA_ID         (e.g. G-XXXXXXXXXX)
- *  - Plausible:           set NEXT_PUBLIC_PLAUSIBLE_DOMAIN (e.g. Othmane Aoubid)
+ *  - Google Analytics 4:  set NEXT_PUBLIC_GA_MEASUREMENT_ID (e.g. G-XXXXXXXXXX)
+ *  - Plausible:           set NEXT_PUBLIC_PLAUSIBLE_DOMAIN (e.g. othmaneaoubid.com)
+ *
+ * GA4 loads in production only when NEXT_PUBLIC_GA_MEASUREMENT_ID is set.
  */
 export default function Analytics() {
-  const ga = process.env.NEXT_PUBLIC_GA_ID;
+  const isProd = process.env.NODE_ENV === "production";
+  const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
   const plausible = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN;
+
+  if (!isProd) return null;
 
   return (
     <>
-      {ga && (
-        <>
-          <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${ga}`}
-            strategy="afterInteractive"
-          />
-          <Script id="ga4-init" strategy="afterInteractive">
-            {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${ga}',{anonymize_ip:true});`}
-          </Script>
-        </>
-      )}
+      {gaId && <GoogleAnalytics gaId={gaId} />}
       {plausible && (
         <Script
           defer

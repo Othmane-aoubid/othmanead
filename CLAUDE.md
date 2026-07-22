@@ -109,7 +109,7 @@ Topics NOT yet added (good candidates for future expansion):
 2. **Topic catalogue** — add to `src/lib/data/learningTopics.ts`
 3. **Visualization** (optional) — create `src/components/learning/visualizations/<Name>Viz.tsx`
 4. **Wire viz** — add `dynamic` import + `case` in `TopicDetailClient.tsx`
-5. **Copy to main project** — dev server runs from `C:\Users\Extremepc.ma\Desktop\ossama-portfolio\`
+5. **Copy to main project** — dev server runs from `C:\Users\Extremepc.ma\Desktop\othmane-portfolio\`
    (worktree path has a separate checkout; changes here don't auto-appear in the browser)
 
 ---

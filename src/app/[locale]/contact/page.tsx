@@ -5,6 +5,12 @@ import { useState } from "react";
 import { Mail, Send, CheckCircle, Phone, MapPin, Clock, MessageCircle } from "lucide-react";
 import { GithubIcon, LinkedInIcon, KaggleIcon } from "@/components/ui/SocialIcons";
 import { GITHUB_URL, LINKEDIN_URL, KAGGLE_URL, EMAIL, PHONE } from "@/lib/data";
+import {
+  trackContactSubmit,
+  trackGithubClick,
+  trackLinkedinClick,
+  trackWhatsappClick,
+} from "@/lib/analytics";
 
 const WA_URL = `https://wa.me/${PHONE.replace(/\s+/g, "")}`;
 
@@ -41,6 +47,7 @@ export default function ContactPage() {
         body: JSON.stringify(payload),
       });
       if (!res.ok) throw new Error();
+      trackContactSubmit();
       setSubmitted(true);
     } catch {
       setError(errorLabel);
@@ -93,6 +100,7 @@ export default function ContactPage() {
             href={WA_URL}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackWhatsappClick("contact")}
             className="flex items-center justify-center gap-3 w-full py-3.5 rounded-2xl font-medium text-sm transition-all border"
             style={{ backgroundColor: "#25d36620", borderColor: "#25d366", color: "#25d366" }}
           >
@@ -127,6 +135,11 @@ export default function ContactPage() {
 
                 {socials.map((s) => (
                   <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
+                    onClick={() =>
+                      s.label === "GitHub"
+                        ? trackGithubClick("contact")
+                        : trackLinkedinClick("contact")
+                    }
                     className="flex items-center gap-3 rounded-xl p-2 transition-colors hover:bg-[var(--bg-elevated)]"
                     style={{ color: "var(--text-secondary)" }}>
                     <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0"

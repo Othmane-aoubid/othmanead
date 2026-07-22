@@ -1,0 +1,796 @@
+npm warn Unknown env config "devdir". This will stop working in the next major version of npm.
+Ôû▓ Next.js 16.2.6 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+Ô£ô Compiled successfully in 11.1s
+  Running TypeScript ...
+  Finished TypeScript in 22.4s ...
+  Collecting page data using 7 workers ...
+ÔÜá Using edge runtime on a page currently disables static generation for that page
+  Generating static pages using 7 workers (0/324) ...
+  Generating static pages using 7 workers (81/324) 
+Error: MISSING_MESSAGE: projects.back_all (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31029) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (en)'
+}
+Error: MISSING_MESSAGE: projects.back_all (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31461) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (en)'
+}
+Error: MISSING_MESSAGE: projects.view_Website (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:32671) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.view_Website (en)'
+}
+Error: MISSING_MESSAGE: projects.dataset (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:33924) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.dataset (en)'
+}
+Error: MISSING_MESSAGE: projects.approach (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34338) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.approach (en)'
+}
+Error: MISSING_MESSAGE: projects.tech_stack (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34790) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.tech_stack (en)'
+}
+Error: MISSING_MESSAGE: projects.keywords (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35340) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.keywords (en)'
+}
+Error: MISSING_MESSAGE: projects.charts (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35706) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.charts (en)'
+}
+Error: MISSING_MESSAGE: projects.deep_dive (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36073) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.deep_dive (en)'
+}
+Error: MISSING_MESSAGE: projects.back (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36528) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back (en)'
+}
+Error: MISSING_MESSAGE: projects.back_all (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31029) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (en)'
+}
+Error: MISSING_MESSAGE: projects.back_all (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31461) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (en)'
+}
+Error: MISSING_MESSAGE: projects.approach (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34338) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.approach (en)'
+}
+Error: MISSING_MESSAGE: projects.tech_stack (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34790) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.tech_stack (en)'
+}
+Error: MISSING_MESSAGE: projects.keywords (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35340) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.keywords (en)'
+}
+Error: MISSING_MESSAGE: projects.deep_dive (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36073) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.deep_dive (en)'
+}
+Error: MISSING_MESSAGE: projects.back (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36528) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back (en)'
+}
+Error: MISSING_MESSAGE: projects.back_all (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31029) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (en)'
+}
+Error: MISSING_MESSAGE: projects.back_all (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31461) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (en)'
+}
+Error: MISSING_MESSAGE: projects.dataset (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:33924) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.dataset (en)'
+}
+Error: MISSING_MESSAGE: projects.approach (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34338) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.approach (en)'
+}
+Error: MISSING_MESSAGE: projects.tech_stack (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34790) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.tech_stack (en)'
+}
+Error: MISSING_MESSAGE: projects.keywords (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35340) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.keywords (en)'
+}
+Error: MISSING_MESSAGE: projects.deep_dive (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36073) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.deep_dive (en)'
+}
+Error: MISSING_MESSAGE: projects.back (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36528) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back (en)'
+}
+Error: MISSING_MESSAGE: projects.back_all (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31029) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (en)'
+}
+Error: MISSING_MESSAGE: projects.back_all (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31461) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (en)'
+}
+Error: MISSING_MESSAGE: projects.dataset (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:33924) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.dataset (en)'
+}
+Error: MISSING_MESSAGE: projects.approach (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34338) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.approach (en)'
+}
+Error: MISSING_MESSAGE: projects.tech_stack (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34790) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.tech_stack (en)'
+}
+Error: MISSING_MESSAGE: projects.keywords (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35340) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.keywords (en)'
+}
+Error: MISSING_MESSAGE: projects.deep_dive (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36073) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.deep_dive (en)'
+}
+Error: MISSING_MESSAGE: projects.back (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36528) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back (en)'
+}
+  Generating static pages using 7 workers (162/324) 
+Error: MISSING_MESSAGE: projects.back_all (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31029) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (en)'
+}
+Error: MISSING_MESSAGE: projects.back_all (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31461) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (en)'
+}
+Error: MISSING_MESSAGE: projects.view_Website (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:32671) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.view_Website (en)'
+}
+Error: MISSING_MESSAGE: projects.approach (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34338) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.approach (en)'
+}
+Error: MISSING_MESSAGE: projects.tech_stack (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34790) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.tech_stack (en)'
+}
+Error: MISSING_MESSAGE: projects.keywords (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35340) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.keywords (en)'
+}
+Error: MISSING_MESSAGE: projects.charts (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35706) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.charts (en)'
+}
+Error: MISSING_MESSAGE: projects.deep_dive (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36073) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.deep_dive (en)'
+}
+Error: MISSING_MESSAGE: projects.back (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36528) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back (en)'
+}
+Error: MISSING_MESSAGE: projects.back_all (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31029) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (fr)'
+}
+Error: MISSING_MESSAGE: projects.back_all (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31461) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (fr)'
+}
+Error: MISSING_MESSAGE: projects.view_Website (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:32671) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.view_Website (fr)'
+}
+Error: MISSING_MESSAGE: projects.dataset (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:33924) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.dataset (fr)'
+}
+Error: MISSING_MESSAGE: projects.approach (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34338) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.approach (fr)'
+}
+Error: MISSING_MESSAGE: projects.tech_stack (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34790) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.tech_stack (fr)'
+}
+Error: MISSING_MESSAGE: projects.keywords (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35340) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.keywords (fr)'
+}
+Error: MISSING_MESSAGE: projects.charts (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35706) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.charts (fr)'
+}
+Error: MISSING_MESSAGE: projects.deep_dive (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36073) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.deep_dive (fr)'
+}
+Error: MISSING_MESSAGE: projects.back (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36528) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back (fr)'
+}
+Error: MISSING_MESSAGE: projects.back_all (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31029) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (ar)'
+}
+Error: MISSING_MESSAGE: projects.back_all (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31461) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (ar)'
+}
+Error: MISSING_MESSAGE: projects.view_Website (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:32671) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.view_Website (ar)'
+}
+Error: MISSING_MESSAGE: projects.dataset (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:33924) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.dataset (ar)'
+}
+Error: MISSING_MESSAGE: projects.approach (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34338) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.approach (ar)'
+}
+Error: MISSING_MESSAGE: projects.tech_stack (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34790) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.tech_stack (ar)'
+}
+Error: MISSING_MESSAGE: projects.keywords (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35340) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.keywords (ar)'
+}
+Error: MISSING_MESSAGE: projects.charts (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35706) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.charts (ar)'
+}
+Error: MISSING_MESSAGE: projects.deep_dive (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36073) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.deep_dive (ar)'
+}
+Error: MISSING_MESSAGE: projects.back (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36528) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back (ar)'
+}
+Error: MISSING_MESSAGE: projects.back_all (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31029) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (en)'
+}
+Error: MISSING_MESSAGE: projects.back_all (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31461) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (en)'
+}
+Error: MISSING_MESSAGE: projects.approach (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34338) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.approach (en)'
+}
+Error: MISSING_MESSAGE: projects.tech_stack (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34790) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.tech_stack (en)'
+}
+Error: MISSING_MESSAGE: projects.keywords (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35340) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.keywords (en)'
+}
+Error: MISSING_MESSAGE: projects.charts (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35706) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.charts (en)'
+}
+Error: MISSING_MESSAGE: projects.deep_dive (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36073) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.deep_dive (en)'
+}
+Error: MISSING_MESSAGE: projects.back (en)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36528) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back (en)'
+}
+Error: MISSING_MESSAGE: projects.back_all (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31029) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (fr)'
+}
+Error: MISSING_MESSAGE: projects.back_all (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31461) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (fr)'
+}
+Error: MISSING_MESSAGE: projects.approach (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34338) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.approach (fr)'
+}
+Error: MISSING_MESSAGE: projects.tech_stack (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34790) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.tech_stack (fr)'
+}
+Error: MISSING_MESSAGE: projects.keywords (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35340) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.keywords (fr)'
+}
+Error: MISSING_MESSAGE: projects.deep_dive (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36073) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.deep_dive (fr)'
+}
+Error: MISSING_MESSAGE: projects.back (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36528) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back (fr)'
+}
+Error: MISSING_MESSAGE: projects.back_all (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31029) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (fr)'
+}
+Error: MISSING_MESSAGE: projects.back_all (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31461) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (fr)'
+}
+Error: MISSING_MESSAGE: projects.view_Website (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:32671) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.view_Website (fr)'
+}
+Error: MISSING_MESSAGE: projects.approach (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34338) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.approach (fr)'
+}
+Error: MISSING_MESSAGE: projects.tech_stack (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34790) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.tech_stack (fr)'
+}
+Error: MISSING_MESSAGE: projects.keywords (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35340) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.keywords (fr)'
+}
+Error: MISSING_MESSAGE: projects.charts (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35706) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.charts (fr)'
+}
+Error: MISSING_MESSAGE: projects.deep_dive (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36073) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.deep_dive (fr)'
+}
+Error: MISSING_MESSAGE: projects.back (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36528) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back (fr)'
+}
+Error: MISSING_MESSAGE: projects.back_all (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31029) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (fr)'
+}
+Error: MISSING_MESSAGE: projects.back_all (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31461) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (fr)'
+}
+Error: MISSING_MESSAGE: projects.dataset (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:33924) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.dataset (fr)'
+}
+Error: MISSING_MESSAGE: projects.approach (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34338) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.approach (fr)'
+}
+Error: MISSING_MESSAGE: projects.tech_stack (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34790) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.tech_stack (fr)'
+}
+Error: MISSING_MESSAGE: projects.keywords (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35340) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.keywords (fr)'
+}
+Error: MISSING_MESSAGE: projects.deep_dive (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36073) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.deep_dive (fr)'
+}
+Error: MISSING_MESSAGE: projects.back (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36528) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back (fr)'
+}
+  Generating static pages using 7 workers (243/324) 
+Error: MISSING_MESSAGE: projects.back_all (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31029) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (fr)'
+}
+Error: MISSING_MESSAGE: projects.back_all (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31461) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (fr)'
+}
+Error: MISSING_MESSAGE: projects.dataset (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:33924) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.dataset (fr)'
+}
+Error: MISSING_MESSAGE: projects.approach (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34338) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.approach (fr)'
+}
+Error: MISSING_MESSAGE: projects.tech_stack (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34790) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.tech_stack (fr)'
+}
+Error: MISSING_MESSAGE: projects.keywords (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35340) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.keywords (fr)'
+}
+Error: MISSING_MESSAGE: projects.deep_dive (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36073) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.deep_dive (fr)'
+}
+Error: MISSING_MESSAGE: projects.back (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36528) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back (fr)'
+}
+Error: MISSING_MESSAGE: projects.back_all (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31029) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (fr)'
+}
+Error: MISSING_MESSAGE: projects.back_all (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31461) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (fr)'
+}
+Error: MISSING_MESSAGE: projects.approach (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34338) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.approach (fr)'
+}
+Error: MISSING_MESSAGE: projects.tech_stack (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34790) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.tech_stack (fr)'
+}
+Error: MISSING_MESSAGE: projects.keywords (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35340) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.keywords (fr)'
+}
+Error: MISSING_MESSAGE: projects.charts (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35706) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.charts (fr)'
+}
+Error: MISSING_MESSAGE: projects.deep_dive (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36073) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.deep_dive (fr)'
+}
+Error: MISSING_MESSAGE: projects.back (fr)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36528) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back (fr)'
+}
+Error: MISSING_MESSAGE: projects.back_all (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31029) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (ar)'
+}
+Error: MISSING_MESSAGE: projects.back_all (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31461) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (ar)'
+}
+Error: MISSING_MESSAGE: projects.approach (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34338) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.approach (ar)'
+}
+Error: MISSING_MESSAGE: projects.tech_stack (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34790) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.tech_stack (ar)'
+}
+Error: MISSING_MESSAGE: projects.keywords (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35340) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.keywords (ar)'
+}
+Error: MISSING_MESSAGE: projects.deep_dive (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36073) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.deep_dive (ar)'
+}
+Error: MISSING_MESSAGE: projects.back (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36528) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back (ar)'
+}
+Error: MISSING_MESSAGE: projects.back_all (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31029) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (ar)'
+}
+Error: MISSING_MESSAGE: projects.back_all (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31461) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (ar)'
+}
+Error: MISSING_MESSAGE: projects.dataset (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:33924) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.dataset (ar)'
+}
+Error: MISSING_MESSAGE: projects.approach (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34338) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.approach (ar)'
+}
+Error: MISSING_MESSAGE: projects.tech_stack (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34790) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.tech_stack (ar)'
+}
+Error: MISSING_MESSAGE: projects.keywords (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35340) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.keywords (ar)'
+}
+Error: MISSING_MESSAGE: projects.deep_dive (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36073) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.deep_dive (ar)'
+}
+Error: MISSING_MESSAGE: projects.back (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36528) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back (ar)'
+}
+Error: MISSING_MESSAGE: projects.back_all (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31029) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (ar)'
+}
+Error: MISSING_MESSAGE: projects.back_all (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31461) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (ar)'
+}
+Error: MISSING_MESSAGE: projects.approach (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34338) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.approach (ar)'
+}
+Error: MISSING_MESSAGE: projects.tech_stack (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34790) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.tech_stack (ar)'
+}
+Error: MISSING_MESSAGE: projects.keywords (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35340) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.keywords (ar)'
+}
+Error: MISSING_MESSAGE: projects.charts (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35706) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.charts (ar)'
+}
+Error: MISSING_MESSAGE: projects.deep_dive (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36073) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.deep_dive (ar)'
+}
+Error: MISSING_MESSAGE: projects.back (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36528) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back (ar)'
+}
+Error: MISSING_MESSAGE: projects.back_all (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31029) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (ar)'
+}
+Error: MISSING_MESSAGE: projects.back_all (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31461) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (ar)'
+}
+Error: MISSING_MESSAGE: projects.dataset (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:33924) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.dataset (ar)'
+}
+Error: MISSING_MESSAGE: projects.approach (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34338) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.approach (ar)'
+}
+Error: MISSING_MESSAGE: projects.tech_stack (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34790) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.tech_stack (ar)'
+}
+Error: MISSING_MESSAGE: projects.keywords (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35340) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.keywords (ar)'
+}
+Error: MISSING_MESSAGE: projects.deep_dive (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36073) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.deep_dive (ar)'
+}
+Error: MISSING_MESSAGE: projects.back (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36528) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back (ar)'
+}
+Error: MISSING_MESSAGE: projects.back_all (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31029) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (ar)'
+}
+Error: MISSING_MESSAGE: projects.back_all (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:31461) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back_all (ar)'
+}
+Error: MISSING_MESSAGE: projects.view_Website (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:32671) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.view_Website (ar)'
+}
+Error: MISSING_MESSAGE: projects.approach (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34338) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.approach (ar)'
+}
+Error: MISSING_MESSAGE: projects.tech_stack (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:34790) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.tech_stack (ar)'
+}
+Error: MISSING_MESSAGE: projects.keywords (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35340) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.keywords (ar)'
+}
+Error: MISSING_MESSAGE: projects.charts (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:35706) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.charts (ar)'
+}
+Error: MISSING_MESSAGE: projects.deep_dive (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36073) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.deep_dive (ar)'
+}
+Error: MISSING_MESSAGE: projects.back (ar)
+    at A (C:\Users\othma\OneDrive\Bureau\claudeenv\portfolio_2\.next\server\chunks\ssr\src_0kdg37v._.js:1:36528) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'projects.back (ar)'
+}
+Ô£ô Generating static pages using 7 workers (324/324) in 3.4s
+  Finalizing page optimization ...
+
+Route (app)
+Ôöî ãÆ /
+Ôö£ ãÆ /_not-found
+Ôö£ ãÆ /[locale]
+Ôö£ ãÆ /[locale]/about
+Ôö£ ãÆ /[locale]/blog
+Ôö£ ãÆ /[locale]/blog/[slug]
+Ôö£ ãÆ /[locale]/contact
+Ôö£ ãÆ /[locale]/games
+Ôö£ ãÆ /[locale]/games/[id]
+Ôö£ ãÆ /[locale]/learning
+Ôö£ ãÆ /[locale]/learning/[id]
+Ôö£ ãÆ /[locale]/projects
+Ôö£ ãÆ /[locale]/projects/[id]
+Ôö£ ãÆ /[locale]/services
+Ôö£ ãÆ /api/contact
+Ôö£ ãÆ /api/indexnow
+Ôö£ ãÆ /api/og
+Ôö£ ãÆ /feed.xml
+Ôö£ Ôùï /manifest.webmanifest
+Ôö£ Ôùï /robots.txt
+Ôöö Ôùï /sitemap.xml
+
+
+ãÆ Proxy (Middleware)
+
+Ôùï  (Static)   prerendered as static content
+ãÆ  (Dynamic)  server-rendered on demand
+

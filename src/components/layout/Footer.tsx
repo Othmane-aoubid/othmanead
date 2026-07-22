@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Mail, MapPin, Phone, ExternalLink, MessageCircle } from "lucide-react";
 import { GithubIcon, LinkedInIcon, KaggleIcon } from "@/components/ui/SocialIcons";
 import { GITHUB_URL, LINKEDIN_URL, KAGGLE_URL, EMAIL, PHONE } from "@/lib/data";
+import { trackGithubClick, trackLinkedinClick } from "@/lib/analytics";
 
 const skills = [
   "Next.js", 
@@ -119,6 +120,11 @@ export default function Footer() {
                   href={s.href}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() =>
+                    s.label === "GitHub"
+                      ? trackGithubClick("footer")
+                      : trackLinkedinClick("footer")
+                  }
                   className="flex items-center gap-2.5 text-sm transition-colors hover:text-[var(--primary)] group"
                   style={{ color: "var(--text-secondary)" }}
                 >

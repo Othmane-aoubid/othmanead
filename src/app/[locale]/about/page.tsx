@@ -13,6 +13,7 @@ import {
   education,
 } from "@/lib/data";
 import { ProfilePageSchema, BreadcrumbSchema } from "@/components/seo/JsonLd";
+import TrackWrap from "@/components/analytics/TrackWrap";
 
 export async function generateMetadata({
   params,
@@ -148,32 +149,36 @@ export default async function AboutPage({
 
               {/* Social */}
               <div className="flex gap-2">
-                <a
-                  href={GITHUB_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg border text-xs transition-all"
-                  style={{
-                    borderColor: "var(--border)",
-                    color: "var(--text-secondary)",
-                  }}
-                >
-                  <GithubIcon size={13} />
-                  GitHub
-                </a>
-                <a
-                  href={LINKEDIN_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg border text-xs transition-all"
-                  style={{
-                    borderColor: "var(--border)",
-                    color: "var(--text-secondary)",
-                  }}
-                >
-                  <LinkedInIcon size={13} />
-                  LinkedIn
-                </a>
+                <TrackWrap event="github_click" location="about">
+                  <a
+                    href={GITHUB_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg border text-xs transition-all"
+                    style={{
+                      borderColor: "var(--border)",
+                      color: "var(--text-secondary)",
+                    }}
+                  >
+                    <GithubIcon size={13} />
+                    GitHub
+                  </a>
+                </TrackWrap>
+                <TrackWrap event="linkedin_click" location="about">
+                  <a
+                    href={LINKEDIN_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg border text-xs transition-all"
+                    style={{
+                      borderColor: "var(--border)",
+                      color: "var(--text-secondary)",
+                    }}
+                  >
+                    <LinkedInIcon size={13} />
+                    LinkedIn
+                  </a>
+                </TrackWrap>
               </div>
             </div>
           </div>
@@ -192,15 +197,17 @@ export default async function AboutPage({
             </p>
 
             <div className="flex flex-wrap gap-3 mt-4">
-              <a
-                href={locale === "fr" ? "/cv/othmane_aoubid_cv_fr.pdf" : "/cv/othmane_aoubid_resume_eng.pdf"}
-                download
-                className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-sm font-medium transition-all"
-                style={{ backgroundColor: "var(--primary)" }}
-              >
-                <Download size={15} />
-                {t("download_cv")}
-              </a>
+              <TrackWrap event="cv_download" location="about">
+                <a
+                  href={locale === "fr" ? "/cv/othmane_aoubid_cv_fr.pdf" : "/cv/othmane_aoubid_resume_eng.pdf"}
+                  download
+                  className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-sm font-medium transition-all"
+                  style={{ backgroundColor: "var(--primary)" }}
+                >
+                  <Download size={15} />
+                  {t("download_cv")}
+                </a>
+              </TrackWrap>
               <Link
                 href={`/${locale}/contact`}
                 className="flex items-center gap-2 px-5 py-2.5 rounded-xl border text-sm font-medium transition-all"

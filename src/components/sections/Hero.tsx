@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowRight, Download } from "lucide-react";
 import { GithubIcon, LinkedInIcon, KaggleIcon } from "@/components/ui/SocialIcons";
 import { GITHUB_URL, LINKEDIN_URL, KAGGLE_URL } from "@/lib/data";
+import { trackCvDownload, trackGithubClick, trackLinkedinClick } from "@/lib/analytics";
 
 export default function Hero() {
   const t = useTranslations("hero");
@@ -96,6 +97,7 @@ export default function Hero() {
             href={GITHUB_URL}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackGithubClick("hero")}
             className="flex items-center gap-2 text-sm transition-colors"
             style={{ color: "var(--text-secondary)" }}
           >
@@ -107,6 +109,7 @@ export default function Hero() {
             href={LINKEDIN_URL}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackLinkedinClick("hero")}
             className="flex items-center gap-2 text-sm transition-colors"
             style={{ color: "var(--text-secondary)" }}
           >
@@ -127,6 +130,7 @@ export default function Hero() {
           <span style={{ color: "var(--border)" }}>•</span>
           <a
             href={locale === "fr" ? "/cv/othmane_aoubid_cv_fr.pdf" : "/cv/othmane_aoubid_resume_eng.pdf"}
+            onClick={() => trackCvDownload("hero")}
             className="flex items-center gap-2 text-sm transition-colors"
             style={{ color: "var(--text-secondary)" }}
             download
