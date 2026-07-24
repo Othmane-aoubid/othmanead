@@ -569,6 +569,122 @@ Navigateur
   approachFr: "Architecture axée sur la sécurité avec auth JWT RS256, RBAC, MFA, système de plugins, monitoring complet et déploiement prêt pour la production",
   approachAr: "هيكل يركز على الأمان مع مصادقة JWT RS256، RBAC، MFA، نظام إضافات، مراقبة شاملة ونشر جاهز للإنتاج",
   },
+  {
+  id: "mailflow",
+  title: "Mailflow — AI-Assisted Job Outreach",
+  titleFr: "Mailflow — Prospection d'Emploi Assistée par l'IA",
+  titleAr: "Mailflow — مراسلات التوظيف المدعومة بالذكاء الاصطناعي",
+  description: "An AI-assisted application that turns job descriptions and candidate context into concise, tailored cold emails. It combines secure user accounts, CV text extraction, reusable templates, and direct email delivery in one workflow.",
+  descriptionFr: "Une application assistée par l'IA qui transforme une offre d'emploi et le contexte du candidat en e-mails de prospection concis et personnalisés. Elle réunit comptes sécurisés, extraction de texte de CV, modèles réutilisables et envoi direct dans un même flux de travail.",
+  descriptionAr: "تطبيق مدعوم بالذكاء الاصطناعي يحوّل وصف الوظيفة وسياق المرشح إلى رسائل تواصل مهنية موجزة ومخصصة. يجمع في سير عمل واحد بين الحسابات الآمنة، واستخراج نصوص السيرة الذاتية، والقوالب القابلة لإعادة الاستخدام، والإرسال المباشر للبريد الإلكتروني.",
+  longDescription: `Mailflow streamlines personalized job outreach while keeping candidates in control of every message. Users provide a job description, recipient details, and their professional context; the application creates a concise, role-specific email that can be reviewed, copied with formatting preserved, or sent directly.
+
+**Core workflow**
+- Secure email/password authentication with Supabase Auth
+- Profile settings for portfolio, LinkedIn, reply-to address, signature, and email appearance
+- Job-description, recipient, language, and candidate-context inputs in a focused compose flow
+- PDF, DOCX, and TXT CV text extraction (up to 5 MB) for generation context
+- Reusable prompt templates with selectable tone labels
+- Rich HTML and plain-text copying, plus direct sending and searchable history
+
+**AI and delivery pipeline**
+\`\`\`
+Candidate context + job description + selected template
+  → authenticated Next.js API route
+  → Gemini generates a subject line and concise HTML email
+  → styled preview, copy-to-clipboard, or Resend delivery
+  → Supabase stores the email history and delivery status
+\`\`\`
+
+**Technical design**
+- Next.js 16 and React 19 application written in TypeScript
+- Supabase Auth and PostgreSQL with Row Level Security to isolate user profiles, templates, and email history
+- Gemini-powered generation instructed to avoid inventing qualifications
+- Resend delivery with persisted draft, sent, and failed statuses
+- Server-side document extraction using pdf-parse and mammoth
+
+**Responsible use**
+- Generated emails are starting points; users review claims, links, names, and recipients before sending
+- CV uploads are parsed for context and are not persisted by the current flow
+- Sending is designed for legitimate, personalized outreach in line with anti-spam and privacy requirements.`,
+  longDescriptionFr: `Mailflow simplifie la prospection d'emploi personnalisée tout en laissant au candidat le contrôle de chaque message. L'utilisateur fournit une offre d'emploi, les coordonnées du destinataire et son contexte professionnel ; l'application génère un e-mail concis et adapté au poste, à relire, copier avec sa mise en forme ou envoyer directement.
+
+**Flux de travail principal**
+- Authentification sécurisée par e-mail et mot de passe avec Supabase Auth
+- Paramètres de profil pour le portfolio, LinkedIn, l'adresse de réponse, la signature et l'apparence des e-mails
+- Saisie de l'offre, du destinataire, de la langue et du contexte du candidat dans un espace de rédaction dédié
+- Extraction du texte des CV PDF, DOCX et TXT (jusqu'à 5 Mo) comme contexte de génération
+- Modèles d'instructions réutilisables avec un ton sélectionnable
+- Copie en HTML enrichi et texte brut, envoi direct et historique consultable
+
+**Pipeline d'IA et d'envoi**
+\`\`\`
+Contexte du candidat + offre d'emploi + modèle sélectionné
+  → route API Next.js authentifiée
+  → Gemini génère l'objet et un e-mail HTML concis
+  → aperçu mis en forme, copie dans le presse-papiers ou envoi avec Resend
+  → Supabase enregistre l'historique et le statut de livraison
+\`\`\`
+
+**Conception technique**
+- Application Next.js 16 et React 19 développée en TypeScript
+- Supabase Auth et PostgreSQL avec Row Level Security pour isoler les profils, modèles et historiques de chaque utilisateur
+- Génération par Gemini avec des consignes empêchant l'invention de qualifications
+- Envoi par Resend avec suivi des statuts brouillon, envoyé et en échec
+- Extraction côté serveur des documents avec pdf-parse et mammoth
+
+**Utilisation responsable**
+- Les e-mails générés constituent un point de départ ; l'utilisateur vérifie les informations, liens, noms et destinataires avant l'envoi
+- Les CV importés sont analysés pour fournir du contexte et ne sont pas conservés par le flux actuel
+- L'envoi est destiné à une prospection légitime et personnalisée, dans le respect des règles anti-spam et de confidentialité.`,
+  longDescriptionAr: `يُسهّل Mailflow مراسلات التوظيف الشخصية مع إبقاء المرشح مسيطراً على كل رسالة. يُدخل المستخدم وصف الوظيفة وبيانات المستلم وسياقه المهني، فينشئ التطبيق رسالة موجزة ومصممة للدور الوظيفي يمكن مراجعتها أو نسخها مع الحفاظ على تنسيقها أو إرسالها مباشرة.
+
+**سير العمل الأساسي**
+- مصادقة آمنة بالبريد الإلكتروني وكلمة المرور عبر Supabase Auth
+- إعدادات للملف الشخصي تشمل رابط المعرض، وLinkedIn، وعنوان الرد، والتوقيع، ومظهر الرسائل
+- إدخال وصف الوظيفة وبيانات المستلم واللغة وسياق المرشح ضمن واجهة كتابة مركزة
+- استخراج النص من ملفات السيرة الذاتية بصيغ PDF وDOCX وTXT حتى 5 ميغابايت لتوفير سياق للتوليد
+- قوالب تعليمات قابلة لإعادة الاستخدام مع اختيار نبرة الرسالة
+- نسخ بصيغتي HTML المنسقة والنص العادي، مع الإرسال المباشر وسجل قابل للبحث
+
+**مسار الذكاء الاصطناعي والإرسال**
+\`\`\`
+سياق المرشح + وصف الوظيفة + القالب المحدد
+  → مسار API موثّق في Next.js
+  → ينشئ Gemini سطر الموضوع ورسالة HTML موجزة
+  → معاينة منسقة أو نسخ إلى الحافظة أو إرسال عبر Resend
+  → يحفظ Supabase السجل وحالة التسليم
+\`\`\`
+
+**التصميم التقني**
+- تطبيق مبني باستخدام Next.js 16 وReact 19 وTypeScript
+- Supabase Auth وPostgreSQL مع Row Level Security لعزل ملفات المستخدمين وقوالبهم وسجل رسائلهم
+- توليد عبر Gemini بتعليمات تمنع اختلاق المؤهلات
+- إرسال عبر Resend مع تتبع حالات المسودة والإرسال والفشل
+- استخراج المستندات على الخادم باستخدام pdf-parse وmammoth
+
+**الاستخدام المسؤول**
+- الرسائل المُولّدة نقطة انطلاق؛ يراجع المستخدم المعلومات والروابط والأسماء وبيانات المستلمين قبل الإرسال
+- تُحلّل ملفات السيرة الذاتية المرفوعة لتوفير السياق ولا يحتفظ بها المسار الحالي
+- صُمم الإرسال لمراسلات مشروعة وشخصية تراعي متطلبات مكافحة الرسائل المزعجة والخصوصية.`,
+  category: ["fullstack", "genai"],
+  tags: ["Next.js 16", "React 19", "TypeScript", "Supabase", "PostgreSQL", "Gemini", "Resend", "Tailwind CSS"],
+  githubUrl: "https://github.com/Othmane-aoubid/mailflow",
+  featured: true,
+  dataset: "AI-assisted job outreach with CV text extraction, reusable templates, secure user data, and email delivery",
+  datasetFr: "Prospection d'emploi assistée par l'IA avec extraction de CV, modèles réutilisables, données sécurisées et envoi d'e-mails",
+  datasetAr: "مراسلات توظيف مدعومة بالذكاء الاصطناعي مع استخراج نصوص السيرة الذاتية وقوالب قابلة لإعادة الاستخدام وبيانات آمنة وإرسال البريد الإلكتروني",
+  results: [
+    { label: "Authentication", value: "Supabase Auth" },
+    { label: "AI generation", value: "Gemini" },
+    { label: "Email delivery", value: "Resend" },
+    { label: "CV formats", value: "PDF / DOCX / TXT" },
+  ],
+  techStack: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS", "Supabase Auth", "PostgreSQL", "Gemini API", "Resend", "pdf-parse", "mammoth"],
+  approach: "A secure, user-centered workflow that grounds concise outreach emails in a job description and candidate-provided context, with review and delivery controls built in.",
+  approachFr: "Un flux de travail sécurisé centré sur l'utilisateur, qui ancre des e-mails de prospection concis dans une offre d'emploi et le contexte fourni par le candidat, avec des contrôles de relecture et d'envoi intégrés.",
+  approachAr: "سير عمل آمن يركز على المستخدم، يربط رسائل التواصل الموجزة بوصف الوظيفة والسياق الذي يقدمه المرشح، مع ضوابط مدمجة للمراجعة والإرسال.",
+  },
 //   {
 //     id: "ethereum-fraud",
 //     title: "Ethereum Blockchain Fraud Detection",
