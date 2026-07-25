@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ExternalLink, ArrowRight, TrendingUp, ChevronRight } from "lucide-react";
 import { GithubIcon } from "@/components/ui/SocialIcons";
+import { trackProjectCardClick, trackProjectLinkClick, trackViewAllProjects } from "@/lib/analytics";
 import { projects } from "@/lib/data";
 import { projectImages } from "@/lib/data/projects/images";
 
@@ -153,6 +154,7 @@ export default function FeaturedProjects() {
                   href={`/${locale}/projects/${project.id}`}
                   className="flex items-center gap-1 text-xs font-medium transition-opacity hover:opacity-70"
                   style={{ color: "var(--primary)" }}
+                  onClick={() => trackProjectCardClick(project.id, getTitle(project))}
                 >
                   <ChevronRight size={12} />
                   {t("details")}
@@ -162,6 +164,7 @@ export default function FeaturedProjects() {
                     href={project.kaggleUrl}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackProjectLinkClick(project.id, "kaggle")}
                     className="flex items-center gap-1.5 text-xs transition-colors"
                     style={{ color: "var(--text-secondary)" }}
                   >
@@ -174,6 +177,7 @@ export default function FeaturedProjects() {
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackProjectLinkClick(project.id, "github")}
                     className="flex items-center gap-1.5 text-xs transition-colors"
                     style={{ color: "var(--text-secondary)" }}
                   >
@@ -190,6 +194,7 @@ export default function FeaturedProjects() {
         <div className="text-center">
           <Link
             href={`/${locale}/projects`}
+            onClick={() => trackViewAllProjects()}
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border font-medium transition-all group"
             style={{
               borderColor: "var(--border-strong)",
