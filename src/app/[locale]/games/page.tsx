@@ -18,7 +18,7 @@ export async function generateMetadata({
     title: pick(locale, {
       en: "AI Game Lab — Browser Games Powered by Real AI | Othmane Aoubid",
       fr: "Laboratoire de jeux IA — Jeux navigateur animés par de vraies IA | Othmane Aoubid",
-      ar: "مختبر ألعاب الذكاء الاصطناعي — ألعاب متصفح تعمل بذكاء حقيقي | أسامة الحقّي",
+      ar: "مختبر ألعاب الذكاء الاصطناعي — ألعاب متصفح تعمل بذكاء حقيقي | عثمان أوبيد",
     }),
     description: pick(locale, {
       en: "10 browser games, each powered by a real AI algorithm — NEAT, Deep Q-Networks, Monte Carlo Tree Search, genetic algorithms, A* pathfinding, and imitation learning. Play instantly, no install needed.",

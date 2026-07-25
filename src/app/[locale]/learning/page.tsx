@@ -16,7 +16,7 @@ export async function generateMetadata({
     title: pick(locale, {
       en: "ML Learning Hub — Visual Machine Learning Explanations | Othmane Aoubid",
       fr: "Centre d'apprentissage ML — Explications visuelles du machine learning | Othmane Aoubid",
-      ar: "مركز تعلم الآلة — شروحات بصرية لتعلم الآلة | أسامة الحقّي",
+      ar: "مركز تعلم الآلة — شروحات بصرية لتعلم الآلة | عثمان أوبيد",
     }),
     description: pick(locale, {
       en: "Hand-crafted visual explanations of machine learning: regression, classification, ensembles, neural networks, transformers — with math derivations and runnable Python.",

@@ -13,21 +13,20 @@ export async function generateMetadata({
     locale,
     path: "/projects",
     title: pick(locale, {
-      en: "AI & Machine Learning Projects Portfolio — Othmane Aoubid",
-      fr: "Portfolio de projets IA & Machine Learning — Othmane Aoubid",
-      ar: "معرض مشاريع الذكاء الاصطناعي والتعلم الآلي — أسامة الحقّي",
+      en: "Projects Portfolio — Othmane Aoubid",
+      fr: "Portfolio de projets — Othmane Aoubid",
+      ar: "معرض المشاريع — عثمان أوبيد",
     }),
     description: pick(locale, {
-      en: "42+ production-grade AI/ML projects by Othmane Aoubid across fraud detection, computer vision, NLP, generative AI, time series, and reinforcement learning — fully documented with code and results.",
-      fr: "Plus de 42 projets IA/ML de niveau production par Othmane Aoubid : détection de fraude, vision par ordinateur, NLP, IA générative, séries temporelles et apprentissage par renforcement — documentés avec code et résultats.",
-      ar: "أكثر من 42 مشروع ذكاء اصطناعي وتعلم آلي بمستوى إنتاجي من أسامة الحقّي تغطي كشف الاحتيال ورؤية الحاسوب ومعالجة اللغات والذكاء التوليدي والسلاسل الزمنية والتعلم التعزيزي — موثقة بالكود والنتائج.",
+      en: "Selected full-stack, cloud, AI integration, and web projects by Othmane Aoubid, with code, technical details, and documented results.",
+      fr: "Une sélection de projets full-stack, cloud, intégration IA et web par Othmane Aoubid, avec code, détails techniques et résultats documentés.",
+      ar: "مجموعة مختارة من مشاريع التطوير المتكامل والحوسبة السحابية وتكامل الذكاء الاصطناعي والويب لعثمان أوبيد، مع الكود والتفاصيل التقنية والنتائج الموثقة.",
     }),
     keywords: [
-      "machine learning projects",
-      "AI portfolio",
-      "computer vision projects",
-      "NLP projects",
-      "Kaggle projects",
+      "full-stack projects",
+      "backend projects",
+      "cloud projects",
+      "web development portfolio",
       "Othmane Aoubid",
     ],
   });
@@ -50,7 +49,7 @@ export default async function ProjectsLayout({
         ]}
       />
       <ItemListSchema
-        name="AI & Machine Learning projects"
+        name="Selected software engineering projects"
         items={projects.slice(0, 30).map((p) => ({
           name: locale === "fr" ? (p.titleFr ?? p.title) : locale === "ar" ? (p.titleAr ?? p.title) : p.title,
           url: `${SITE_URL}/${locale}/projects/${p.id}`,

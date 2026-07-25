@@ -4,7 +4,6 @@ import {
   EMAIL,
   LINKEDIN_URL,
   GITHUB_URL,
-  KAGGLE_URL,
 } from "@/lib/data";
 
 export function PersonSchema() {
@@ -26,7 +25,7 @@ export function PersonSchema() {
     email: EMAIL,
     telephone: "+212691618189",
     image: `${SITE_URL}/og-image.png`,
-    sameAs: [LINKEDIN_URL, GITHUB_URL, KAGGLE_URL],
+    sameAs: [LINKEDIN_URL, GITHUB_URL],
     nationality: { "@type": "Country", name: "Morocco" },
     address: {
       "@type": "PostalAddress",
@@ -83,7 +82,7 @@ export function PersonSchema() {
     hasCredential: [
       {
         "@type": "EducationalOccupationalCredential",
-        name: "Master in Distributed Systems & AI",
+        name: "Master in Big Data and Cloud Computing",
         credentialCategory: "degree",
         educationalLevel: "Master",
       },
@@ -177,7 +176,7 @@ export function OrganizationSchema() {
     logo: `${SITE_URL}/og-image.png`,
     image: `${SITE_URL}/og-image.png`,
     founder: { "@id": `${SITE_URL}/#person` },
-    sameAs: [LINKEDIN_URL, GITHUB_URL, KAGGLE_URL],
+    sameAs: [LINKEDIN_URL, GITHUB_URL],
     areaServed: "Worldwide",
     address: {
       "@type": "PostalAddress",

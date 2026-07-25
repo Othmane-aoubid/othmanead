@@ -31,9 +31,9 @@ export async function generateMetadata({
       ar: "نبذة عن عثمان أوبيد — مطور برمجيات ومهندس حوسبة سحابية في المغرب",
     }),
     description: pick(locale, {
-      en: "Othmane Aoubid — Full-Stack Developer & Cloud Engineer with a Master's in Distributed Systems & AI from ENSET Morocco. Expertise in building secure web applications, scalable backend systems, and cloud-ready solutions.",
-      fr: "Othmane Aoubid — Développeur Full-Stack & Ingénieur Cloud titulaire d'un Master en Systèmes Distribués & IA de l'ENSET Maroc. Expertise dans la création d'applications web sécurisées, de systèmes backend évolutifs et de solutions cloud.",
-      ar: "عثمان أوبيد — مطور برمجيات ومهندس حوسبة سحابية حاصل على ماجستير في الأنظمة الموزعة والذكاء الاصطناعي من ENSET المغرب. خبرة في بناء تطبيقات ويب آمنة، وأنظمة خلفية قابلة للتوسع، وحلول سحابية جاهزة.",
+      en: "Othmane Aoubid — Full-Stack Developer & Cloud Engineer with a Master's in Big Data and Cloud Computing from ENSET Morocco. Expertise in building secure web applications, scalable backend systems, and cloud-ready solutions.",
+      fr: "Othmane Aoubid — Développeur Full-Stack & Ingénieur Cloud titulaire d'un Master en Big Data et Cloud Computing de l'ENSET Maroc. Expertise dans la création d'applications web sécurisées, de systèmes backend évolutifs et de solutions cloud.",
+      ar: "عثمان أوبيد — مطور برمجيات ومهندس حوسبة سحابية حاصل على ماجستير في البيانات الضخمة والحوسبة السحابية من ENSET المغرب. خبرة في بناء تطبيقات ويب آمنة، وأنظمة خلفية قابلة للتوسع، وحلول سحابية جاهزة.",
     }),
     keywords: ["Othmane Aoubid", "Full-Stack Developer Morocco", "Cloud Engineer", "ENSET", "web development portfolio"],
   });
