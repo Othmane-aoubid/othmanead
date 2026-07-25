@@ -10,5 +10,4 @@ export * from './skills';
 export * from './services';
 export * from './learningTopics';
 export * from './blog';
-export * from './faq';
 export * from './gamesDocs';

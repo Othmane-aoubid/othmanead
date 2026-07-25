@@ -7,9 +7,7 @@ import FeaturedProjects from "@/components/sections/FeaturedProjects";
 import SkillsSection from "@/components/sections/SkillsSection";
 import GamesTeaser from "@/components/sections/GamesTeaser";
 import ServicesCTA from "@/components/sections/ServicesCTA";
-import FAQSection from "@/components/sections/FAQSection";
-import { FAQSchema } from "@/components/seo/JsonLd";
-import { getFaq } from "@/lib/data";
+
 
 export async function generateMetadata({
   params,
@@ -55,13 +53,12 @@ export default async function HomePage({
 
   return (
     <>
-      <FAQSchema items={getFaq(locale)} />
+      
       <Hero />
       <Stats />
       <FeaturedProjects />
       <SkillsSection />
       <ServicesCTA />
-      {/* <FAQSection locale={locale} /> */}
     </>
   );
 }

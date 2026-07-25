@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { blogPosts, SITE_URL } from "@/lib/data";
-import { FAQSchema, BreadcrumbSchema, ItemListSchema } from "@/components/seo/JsonLd";
+import { BreadcrumbSchema, ItemListSchema } from "@/components/seo/JsonLd";
 import { buildMetadata, pick } from "@/lib/seo";
 import HireCTA from "@/components/sections/HireCTA";
 
@@ -52,20 +52,10 @@ export default async function BlogPage({
   const readLabel = t("read");
   const featuredLabel = t("featured_badge");
 
-  const faqItems = [
-    {
-      question: "What topics does Othmane Aoubid write about?",
-      answer: "Web development, cloud infrastructure, backend systems, DevOps, system architecture, and production deployment strategies.",
-    },
-    {
-      question: "How often does Othmane publish new articles?",
-      answer: "New technical articles are published regularly, covering hands-on web development projects, tutorial walkthroughs, and cloud engineering insights.",
-    },
-  ];
 
   return (
     <>
-      <FAQSchema items={faqItems} />
+      
       <BreadcrumbSchema
         items={[
           { name: locale === "fr" ? "Accueil" : locale === "ar" ? "الرئيسية" : "Home", url: `${SITE_URL}/${locale}` },
