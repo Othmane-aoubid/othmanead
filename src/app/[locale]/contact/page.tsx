@@ -38,6 +38,7 @@ export default function ContactPage() {
       email: fd.get("email"),
       subject: fd.get("subject"),
       message: fd.get("message"),
+      visitorType: fd.get("visitorType"),
       company: fd.get("company"), // honeypot
     };
     try {
@@ -47,7 +48,7 @@ export default function ContactPage() {
         body: JSON.stringify(payload),
       });
       if (!res.ok) throw new Error();
-      trackContactSubmit();
+      trackContactSubmit(String(fd.get("visitorType") ?? ""));
       setSubmitted(true);
     } catch {
       setError(errorLabel);
@@ -212,6 +213,17 @@ export default function ContactPage() {
                   <div>
                     <label className="block text-xs font-medium mb-1.5" style={{ color: "var(--text-secondary)" }}>{t("subject")}</label>
                     <input type="text" name="subject" required maxLength={300} className={inputCls} style={inputStyle} placeholder={t("subject")} />
+                  </div>
+
+                  <div>
+                    <label className="block text-xs font-medium mb-1.5" style={{ color: "var(--text-secondary)" }}>{t("visitor_type")}</label>
+                    <select name="visitorType" className={inputCls} style={inputStyle} defaultValue="">
+                      <option value="">{t("visitor_type_placeholder")}</option>
+                      <option value="recruiter">{t("visitor_type_recruiter")}</option>
+                      <option value="client">{t("visitor_type_client")}</option>
+                      <option value="collaborator">{t("visitor_type_collaborator")}</option>
+                      <option value="other">{t("visitor_type_other")}</option>
+                    </select>
                   </div>
 
                   <div>

@@ -56,6 +56,7 @@ export async function POST(req: Request) {
   const email = String(data.email ?? "").trim();
   const subject = String(data.subject ?? "").trim();
   const message = String(data.message ?? "").trim();
+  const visitorType = String(data.visitorType ?? "").trim();
   const honeypot = String(data.company ?? "").trim();
 
   // Honeypot
@@ -73,6 +74,13 @@ export async function POST(req: Request) {
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return NextResponse.json(
       { error: "Invalid email address." },
+      { status: 400 }
+    );
+  }
+
+  if (visitorType && !["recruiter", "client", "collaborator", "other"].includes(visitorType)) {
+    return NextResponse.json(
+      { error: "Invalid visitor type." },
       { status: 400 }
     );
   }
@@ -102,6 +110,7 @@ export async function POST(req: Request) {
         <p><strong>Name:</strong> ${esc(name)}</p>
         <p><strong>Email:</strong> ${esc(email)}</p>
         <p><strong>Subject:</strong> ${esc(subject)}</p>
+        ${visitorType ? `<p><strong>Contacting as:</strong> ${esc(visitorType)}</p>` : ""}
 
         <hr>
 

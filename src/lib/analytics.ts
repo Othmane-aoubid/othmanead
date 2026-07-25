@@ -29,8 +29,12 @@ export function trackWhatsappClick(location: string) {
   sendGAEvent("event", "whatsapp_click", { location });
 }
 
-export function trackContactSubmit() {
+export function trackContactSubmit(visitorType?: string) {
   if (!isTrackingEnabled()) return;
+  if (visitorType) {
+    sendGAEvent("event", "contact_form_submit", { visitor_type: visitorType });
+    return;
+  }
   sendGAEvent("event", "contact_form_submit");
 }
 
