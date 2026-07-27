@@ -2790,4 +2790,327 @@ smart-menu-and-order/
     approachFr: "Système de menu de café multilingue avec intégration QR code pour les tables et commande WhatsApp",
     approachAr: "نظام قائمة مقهى متعدد اللغات مع تكامل رمز QR للطاولات والطلب عبر WhatsApp",
   },
+  {
+    id: "ai-orchestrator",
+    title: "AI Orchestrator",
+    titleFr: "Orchestrateur IA",
+    titleAr: "منسق الذكاء الاصطناعي",
+    description: "A production-quality AI Platform for executing multiple AI tasks through a single API. Built with modern Python practices, Clean Architecture principles, and provider-agnostic design.",
+    descriptionFr: "Une plateforme IA de qualité production pour exécuter plusieurs tâches IA via une seule API. Construite avec des pratiques Python modernes, des principes d'architecture propre et un design indépendant du fournisseur.",
+    descriptionAr: "منصة ذكاء اصطناعي جودة الإنتاج لتنفيذ مهام ذكاء اصطناعي متعددة عبر واجهة برمجة تطبيقات واحدة. مبنية بممارسات بايثون الحديثة ومبادئ البنية النظيفة وتصميم مستقل عن المزود.",
+    longDescription: `A production-quality AI Platform for executing multiple AI tasks through a single API. Built with modern Python practices, Clean Architecture principles, and provider-agnostic design.
+
+**Overview**
+This platform provides a unified API for various AI tasks including SEO generation, documentation generation, text summarization, and more. The architecture is designed to be provider-agnostic, allowing seamless switching between different AI providers (Baseten, OpenAI, Anthropic, etc.) without modifying the core application.
+
+**Key Features**
+- Multi-Task Support: SEO optimization, code documentation, text summarization, and extensible task system
+- Provider Agnostic: Easy switching between AI providers (Baseten, OpenAI, Anthropic, etc.)
+- Clean Architecture: Separation of concerns with dedicated layers for validation, execution, parsing
+- Production Ready: Comprehensive error handling, structured logging, retry logic, and monitoring
+- Modern Tech Stack: Python 3.12+, FastAPI, Pydantic v2, Docker, TypeScript frontend
+- Type Safety: Full type hints with mypy validation
+- Testing: Comprehensive test suite with pytest
+- Docker Support: Containerized deployment for easy scaling
+
+**Architecture**
+The platform follows Clean Architecture principles with clear separation of concerns:
+
+Request → Validation → Task Registry → Prompt Builder → Provider Layer → Response Parser → Response
+
+**Core Components**
+- API Layer: FastAPI endpoints with request validation
+- Task Executor: Orchestrates task execution with error handling and retry logic
+- Task Registry: Dynamic task discovery and registration
+- Prompt Builders: Flexible prompt generation with template support
+- Provider Layer: Abstraction for different AI providers
+- Response Parsers: Structured response parsing and validation
+
+**Technology Stack**
+Backend:
+- Python 3.12+: Modern Python with latest features
+- FastAPI: High-performance async API framework
+- Pydantic v2: Data validation and settings management
+- httpx: Async HTTP client for provider APIs
+- uv: Fast Python package manager
+- Docker: Containerization for deployment
+- Ruff: Fast Python linter
+- mypy: Static type checking
+- python-dotenv: Environment variable management
+- Structured logging: JSON-formatted logs for production monitoring
+
+Frontend:
+- Next.js 14: React framework with App Router
+- TypeScript: Type-safe frontend development
+- Tailwind CSS: Utility-first CSS framework
+- React Hooks: Modern state management
+
+**Installation**
+Prerequisites: Python 3.12+, uv package manager, Docker (optional), Node.js 18+ (for frontend)
+
+Backend Setup:
+\`\`\`bash
+git clone https://github.com/Othmane-aoubid/ai_orchestrator.git
+cd ai_orchestrator
+uv sync
+cp .env.example .env
+\`\`\`
+
+**Running the Application**
+Development Mode:
+\`\`\`bash
+uv run uvicorn src.api.main:app --reload --host 0.0.0.0 --port 8000
+\`\`\`
+
+Production Mode:
+\`\`\`bash
+uvicorn src.api.main:app --host 0.0.0.0 --port 8000
+\`\`\`
+
+Docker:
+\`\`\`bash
+docker build -t ai-orchestrator .
+docker run -p 8000:8000 --env-file .env ai-orchestrator
+\`\`\`
+
+**Testing**
+\`\`\`bash
+uv run pytest
+uv run pytest --cov=src --cov-report=html
+\`\`\`
+
+**API Usage**
+Execute a Task:
+\`\`\`bash
+curl -X POST http://localhost:8000/api/v1/execute \\
+  -H "Content-Type: application/json" \\
+  -d '{
+    "task_id": "seo",
+    "inputs": {
+      "content": "Your content here",
+      "target_audience": "general audience"
+    }
+  }'
+\`\`\`
+
+**Available Tasks**
+- seo: SEO content optimization
+- documentation: Code documentation generation
+- summarization: Text summarization with key points
+
+**License**
+MIT License`,
+    longDescriptionFr: `Une plateforme IA de qualité production pour exécuter plusieurs tâches IA via une seule API. Construite avec des pratiques Python modernes, des principes d'architecture propre et un design indépendant du fournisseur.
+
+**Aperçu**
+Cette plateforme fournit une API unifiée pour diverses tâches IA incluant la génération SEO, la génération de documentation, le résumé de texte, et plus encore. L'architecture est conçue pour être indépendante du fournisseur, permettant un changement transparent entre différents fournisseurs IA (Baseten, OpenAI, Anthropic, etc.) sans modifier l'application principale.
+
+**Fonctionnalités Clés**
+- Support Multi-Tâches : Optimisation SEO, documentation de code, résumé de texte, et système de tâches extensible
+- Indépendant du Fournisseur : Changement facile entre fournisseurs IA (Baseten, OpenAI, Anthropic, etc.)
+- Architecture Propre : Séparation des préoccupations avec des couches dédiées pour validation, exécution, parsing
+- Prêt pour la Production : Gestion d'erreurs complète, journalisation structurée, logique de réessai, et surveillance
+- Stack Technique Moderne : Python 3.12+, FastAPI, Pydantic v2, Docker, frontend TypeScript
+- Sécurité des Types : Indices de type complets avec validation mypy
+- Tests : Suite de tests complète avec pytest
+- Support Docker : Déploiement conteneurisé pour une mise à l'échelle facile
+
+**Architecture**
+La plateforme suit les principes d'architecture propre avec une séparation claire des préoccupations :
+
+Requête → Validation → Registre de Tâches → Constructeur de Prompts → Couche Fournisseur → Parseur de Réponse → Réponse
+
+**Composants Principaux**
+- Couche API : Points de terminaison FastAPI avec validation des requêtes
+- Exécuteur de Tâches : Orchestre l'exécution des tâches avec gestion d'erreurs et logique de réessai
+- Registre de Tâches : Découverte dynamique et enregistrement des tâches
+- Constructeurs de Prompts : Génération flexible de prompts avec support de modèles
+- Couche Fournisseur : Abstraction pour différents fournisseurs IA
+- Parseurs de Réponse : Parsing structuré et validation des réponses
+
+**Stack Technique**
+Backend :
+- Python 3.12+ : Python moderne avec les dernières fonctionnalités
+- FastAPI : Framework API asynchrone haute performance
+- Pydantic v2 : Validation des données et gestion des paramètres
+- httpx : Client HTTP asynchrone pour les API de fournisseurs
+- uv : Gestionnaire de paquets Python rapide
+- Docker : Conteneurisation pour le déploiement
+- Ruff : Linter Python rapide
+- mypy : Vérification de type statique
+- python-dotenv : Gestion des variables d'environnement
+- Journalisation structurée : Logs formatés JSON pour la surveillance de production
+
+Frontend :
+- Next.js 14 : Framework React avec App Router
+- TypeScript : Développement frontend sécurisé par types
+- Tailwind CSS : Framework CSS utilitaire
+- React Hooks : Gestion d'état moderne
+
+**Installation**
+Prérequis : Python 3.12+, gestionnaire de paquets uv, Docker (optionnel), Node.js 18+ (pour le frontend)
+
+Configuration Backend :
+\`\`\`bash
+git clone https://github.com/Othmane-aoubid/ai_orchestrator.git
+cd ai_orchestrator
+uv sync
+cp .env.example .env
+\`\`\`
+
+**Exécution de l'Application**
+Mode Développement :
+\`\`\`bash
+uv run uvicorn src.api.main:app --reload --host 0.0.0.0 --port 8000
+\`\`\`
+
+Mode Production :
+\`\`\`bash
+uvicorn src.api.main:app --host 0.0.0.0 --port 8000
+\`\`\`
+
+Docker :
+\`\`\`bash
+docker build -t ai-orchestrator .
+docker run -p 8000:8000 --env-file .env ai-orchestrator
+\`\`\`
+
+**Tests**
+\`\`\`bash
+uv run pytest
+uv run pytest --cov=src --cov-report=html
+\`\`\`
+
+**Utilisation de l'API**
+Exécuter une Tâche :
+\`\`\`bash
+curl -X POST http://localhost:8000/api/v1/execute \\
+  -H "Content-Type: application/json" \\
+  -d '{
+    "task_id": "seo",
+    "inputs": {
+      "content": "Votre contenu ici",
+      "target_audience": "audience générale"
+    }
+  }'
+\`\`\`
+
+**Tâches Disponibles**
+- seo : Optimisation de contenu SEO
+- documentation : Génération de documentation de code
+- summarization : Résumé de texte avec points clés
+
+**Licence**
+Licence MIT`,
+    longDescriptionAr: `منصة ذكاء اصطناعي جودة الإنتاج لتنفيذ مهام ذكاء اصطناعي متعددة عبر واجهة برمجة تطبيقات واحدة. مبنية بممارسات بايثون الحديثة ومبادئ البنية النظيفة وتصميم مستقل عن المزود.
+
+**نظرة عامة**
+توفر هذه المنصة واجهة برمجة تطبيقات موحدة لمهام ذكاء اصطناعي متنوعة بما في ذلك توليد تحسين محركات البحث، توليد الوثائق، تلخيص النص، والمزيد. تم تصميم البنية لتكون مستقلة عن المزود، مما يسمح بالتبديل السلس بين مقدمي خدمات الذكاء الاصطناعي المختلفين (Baseten و OpenAI و Anthropic، إلخ) دون تعديل التطبيق الأساسي.
+
+**الميزات الرئيسية**
+- دعم المهام المتعددة: تحسين محركات البحث، توثيق الكود، تلخيص النص، ونظام مهام قابل للتوسع
+- مستقل عن المزود: التبديل السهل بين مقدمي خدمات الذكاء الاصطناعي (Baseten و OpenAI و Anthropic، إلخ)
+- البنية النظيفة: فصل الاهتمامات مع طبقات مخصصة للتحقق والتنفيذ والتحليل
+- جاهز للإنتاج: معالجة أخطاء شاملة، تسجيل منظم، منطق إعادة المحاولة، والمراقبة
+- المكدس التقني الحديث: Python 3.12+، FastAPI، Pydantic v2، Docker، واجهة أمامية TypeScript
+- أمان الأنواع: تلميحات نوع كاملة مع التحقق من mypy
+- الاختبار: مجموعة اختبارات شاملة مع pytest
+- دعم Docker: نشر حاويات للتوسع السهل
+
+**البنية**
+تتبع المنصة مبادئ البنية النظيفة مع فصل واضح للاهتمامات:
+
+طلب → التحقق → سجل المهام → منشئ المطالبات → طبقة المزود → محلل الاستجابة → استجابة
+
+**المكونات الأساسية**
+- طبقة API: نقاط نهاية FastAPI مع التحقق من الطلبات
+- منفذ المهام: ينظم تنفيذ المهام مع معالجة الأخطاء ومنطق إعادة المحاولة
+- سجل المهام: اكتشاف ديناميكي وتسجيل المهام
+- منشئو المطالبات: توليد مرن للمطالبات مع دعم القوالب
+- طبقة المزود: تجريد لمقدمي خدمات الذكاء الاصطناعي المختلفين
+- محللو الاستجابة: تحليل منظم والتحقق من الاستجابات
+
+**المكدس التقني**
+Backend:
+- Python 3.12+: بايثون حديث مع أحدث الميزات
+- FastAPI: إطار API غير متزامن عالي الأداء
+- Pydantic v2: التحقق من البيانات وإدارة الإعدادات
+- httpx: عميل HTTP غير متزامن لواجهات برمجة تطبيقات المزود
+- uv: مدير حزم بايثون سريع
+- Docker: الحاويات للنشر
+- Ruff: مدقق بايثون سريع
+- mypy: التحقق من النوع الثابت
+- python-dotenv: إدارة متغيرات البيئة
+- التسجيل المنظم: سجلات بتنسيق JSON لمراقبة الإنتاج
+
+Frontend:
+- Next.js 14: إطار React مع App Router
+- TypeScript: تطوير واجهة أمامية آمنة بالأنواع
+- Tailwind CSS: إطار CSS للأدوات المساعدة
+- React Hooks: إدارة الحالة الحديثة
+
+**التثبيت**
+المتطلبات: Python 3.12+، مدير حزم uv، Docker (اختياري)، Node.js 18+ (للتطوير الأمامي)
+
+إعداد Backend:
+\`\`\`bash
+git clone https://github.com/Othmane-aoubid/ai_orchestrator.git
+cd ai_orchestrator
+uv sync
+cp .env.example .env
+\`\`\`
+
+**تشغيل التطبيق**
+وضع التطوير:
+\`\`\`bash
+uv run uvicorn src.api.main:app --reload --host 0.0.0.0 --port 8000
+\`\`\`
+
+وضع الإنتاج:
+\`\`\`bash
+uvicorn src.api.main:app --host 0.0.0.0 --port 8000
+\`\`\`
+
+Docker:
+\`\`\`bash
+docker build -t ai-orchestrator .
+docker run -p 8000:8000 --env-file .env ai-orchestrator
+\`\`\`
+
+**الاختبار**
+\`\`\`bash
+uv run pytest
+uv run pytest --cov=src --cov-report=html
+\`\`\`
+
+**استخدام API**
+تنفيذ مهمة:
+\`\`\`bash
+curl -X POST http://localhost:8000/api/v1/execute \\
+  -H "Content-Type: application/json" \\
+  -d '{
+    "task_id": "seo",
+    "inputs": {
+      "content": "محتواك هنا",
+      "target_audience": "الجمهور العام"
+    }
+  }'
+\`\`\`
+
+**المهام المتاحة**
+- seo: تحسين محتوى محركات البحث
+- documentation: توليد توثيق الكود
+- summarization: تلخيص النص مع النقاط الرئيسية
+
+**الترخيص**
+ترخيص MIT`,
+    category: ["backend", "genai", "agents"],
+    tags: ["Python", "FastAPI", "Pydantic", "Clean Architecture", "Docker", "TypeScript", "Next.js", "AI Platform", "Provider Agnostic"],
+    githubUrl: "https://github.com/Othmane-aoubid/ai_orchestrator",
+    featured: true,
+    techStack: ["Python", "FastAPI", "Pydantic v2", "httpx", "Docker", "Next.js", "TypeScript", "Tailwind CSS"],
+    approach: "Clean Architecture with provider-agnostic design for multi-task AI execution",
+    approachFr: "Architecture propre avec design indépendant du fournisseur pour l'exécution multi-tâches IA",
+    approachAr: "البنية النظيفة مع تصميم مستقل عن المزود لتنفيذ مهام الذكاء الاصطناعي المتعددة",
+  },
 ];
