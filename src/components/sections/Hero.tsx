@@ -13,9 +13,22 @@ export default function Hero() {
 
   return (
     <section
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-grid"
-      style={{ backgroundColor: "var(--bg-main)" }}
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      style={{
+        backgroundColor: "var(--bg-main)",
+        backgroundImage: "url('/portfolio-hero-background.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
     >
+      {/* Dark overlay for text readability */}
+      <div
+        className="absolute inset-0"
+        style={{
+          backgroundColor: "rgba(10, 12, 16, 0.92)",
+        }}
+      />
       {/* Ambient glow orbs */}
       <div
         className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full blur-[120px] animate-glow-pulse pointer-events-none"

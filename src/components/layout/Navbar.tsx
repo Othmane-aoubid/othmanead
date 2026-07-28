@@ -51,9 +51,14 @@ export default function Navbar() {
           {/* Logo */}
           <Link
             href={`/${locale}`}
-            className="text-xl font-bold gradient-text hover:opacity-80 transition-opacity"
+            className="flex items-center gap-2 hover:opacity-80 transition-opacity"
           >
-            Othmane Aoubid
+            <img
+              src="/logo.png"
+              alt="Othmane Aoubid"
+              className="h-8 w-auto"
+            />
+            <span className="text-xl font-bold gradient-text">Othmane Aoubid</span>
           </Link>
 
           {/* Desktop nav */}
