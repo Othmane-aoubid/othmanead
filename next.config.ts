@@ -35,7 +35,7 @@ const nextConfig: NextConfig = {
       "img-src 'self' data: blob: https:",
       "font-src 'self' data: https://fonts.gstatic.com",
       "media-src 'self' blob:",
-      "connect-src 'self' https://cdn.jsdelivr.net https://www.google-analytics.com https://region1.google-analytics.com https://analytics.google.com https://www.google.com https://plausible.io",
+      "connect-src 'self' https://cdn.jsdelivr.net https://www.google-analytics.com https://region1.google-analytics.com https://analytics.google.com https://www.google.com https://plausible.io https://js.monitor.azure.com https://dc.services.visualstudio.com https://francecentral-1.in.applicationinsights.azure.com https://francecentral.livediagnostics.monitor.azure.com",
       "worker-src 'self' blob:",
       // YouTube embeds in the learning topic video panels.
       "frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com",
