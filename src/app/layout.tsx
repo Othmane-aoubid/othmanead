@@ -4,6 +4,7 @@ import { cookies } from "next/headers";
 import { getLocale } from "next-intl/server";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import ApplicationInsightsInitializer from "@/components/ApplicationInsightsInitializer";
 import "./globals.css";
 
 const inter = Inter({
@@ -72,6 +73,7 @@ export default async function RootLayout({
         className="min-h-screen flex flex-col antialiased"
         style={{ backgroundColor: "var(--bg-main)", color: "var(--text-primary)" }}
       >
+        <ApplicationInsightsInitializer />
         {children}
         <Analytics />
         <SpeedInsights />

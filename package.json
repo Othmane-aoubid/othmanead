@@ -11,6 +11,7 @@
     "submit:indexnow": "node scripts/indexnow.mjs"
   },
   "dependencies": {
+    "@microsoft/applicationinsights-web": "^3.4.3",
     "@next/third-parties": "^16.2.11",
     "@radix-ui/react-dialog": "^1.1.15",
     "@radix-ui/react-tabs": "^1.1.13",
