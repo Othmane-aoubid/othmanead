@@ -11,9 +11,6 @@ A modern, multilingual portfolio website built with Next.js 16, featuring compre
 - **Multi-language Support**: English, French, and Arabic with RTL support
 - **Contact Form**: Secure email delivery via Resend with rate limiting and honeypot protection
 - **Projects Showcase**: Interactive project gallery with detailed views
-- **Blog**: Markdown-based blog with syntax highlighting
-- **Learning Resources**: Educational content with interactive quizzes
-- **Games Section**: Browser-based games and documentation
 - **Services**: Professional services overview
 - **SEO Optimization**: IndexNow integration, sitemap generation, robots.txt
 - **Analytics**: Multi-platform tracking (Vercel, Google Analytics, Azure Application Insights)
