@@ -205,7 +205,7 @@
   },
   "projects": {
   "title": "Tous les projets",
-  "subtitle": "4 projets logiciels prêts pour la production, développés avec des technologies modernes",
+  "subtitle": "5 projets logiciels prêts pour la production, développés avec des technologies modernes",
   "filter_all": "Tous",
   "filter_backend": "Backend",
   "filter_deployment": "Déploiement",

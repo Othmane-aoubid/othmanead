@@ -4,6 +4,243 @@ import type { Project } from './types';
 export const projectsPart1: Project[] = [
   // ── FEATURED ──────────────────────────────────────────────────────────────
   {
+  id: "formbridge",
+  title: "FormBridge - Document Processing & Automation Platform",
+  titleFr: "FormBridge - Plateforme de Traitement et d'Automatisation de Documents",
+  titleAr: "FormBridge - منصة معالجة المستندات والأتمتة",
+
+  description:
+    "AI-powered document processing platform with Azure AI Document Intelligence, FastAPI backend, Next.js frontend. Automated OCR, data extraction, human-in-the-loop review, searchable archive, and comprehensive audit trails.",
+  descriptionFr:
+    "Plateforme de traitement de documents alimentée par l'IA avec Azure AI Document Intelligence, backend FastAPI, frontend Next.js. OCR automatisé, extraction de données, revue humaine, archive consultable et pistes d'audit complètes.",
+  descriptionAr:
+    "منصة معالجة مستندات مدعومة بالذكاء الاصطناعي مع Azure AI Document Intelligence، خلفية FastAPI، واجهة Next.js. OCR آلي، استخراج البيانات، مراجعة بشرية، أرشيف قابل للبحث، وسجلات تدقيق شاملة.",
+
+  longDescription: `FormBridge is an AI-powered document processing and automation platform designed to ingest documents, extract information, store processed data, and provide search/review capabilities.
+
+**Project Overview**
+FormBridge enables organizations to automate document workflows by:
+- Ingesting invoices, receipts, contracts, and other documents
+- Extracting structured data using AI-powered OCR
+- Providing human-in-the-loop review for low-confidence results
+- Maintaining searchable document archives
+- Offering comprehensive audit trails
+
+**Core Features**
+| Module | Functionality |
+|-------|---------|
+| Document Upload | SAS-based direct-to-blob storage |
+| OCR & Extraction | Azure AI Document Intelligence integration |
+| Review Workflow | Human-in-the-loop for low-confidence results |
+| Search & Archive | Azure AI Search with metadata filtering |
+| Document Reprocessing | Trigger reprocessing for improved accuracy |
+| Audit Trail | Comprehensive compliance features |
+
+**Technology Stack**
+**Frontend**
+- Framework: Next.js 16.2.12
+- UI Library: React 19.2.4
+- Styling: Tailwind CSS 4
+- Language: TypeScript 5
+- Deployment: Vercel
+
+**Backend**
+- Framework: FastAPI 0.109.0
+- Language: Python 3.12
+- ASGI Server: Uvicorn 0.27.0
+- Production Server: Gunicorn 21.2.0
+- Authentication: JWT (python-jose) + bcrypt 3.2.2
+- Testing: pytest 7.4.4
+- Deployment: Docker container on Azure App Service
+
+**Azure Cloud Services**
+- Azure App Service: Hosts Dockerized FastAPI backend
+- Azure Cosmos DB: Stores application data
+- Azure Storage Account: Stores uploaded documents
+- Azure AI Document Intelligence: AI-based document analysis
+- Azure AI Search: Document indexing and search
+- Azure Service Bus: Asynchronous messaging
+- Azure Communication Services: Email delivery for password reset
+- Application Insights: Monitoring, telemetry, and diagnostics
+- Managed Identities: Azure identity-based access between services
+
+**Security Features**
+- JWT-based authentication with bcrypt password hashing
+- Password reset functionality via Azure Communication Services email
+- Error tracking with Honeybadger integration
+- No secrets committed to source control
+- Azure managed identities for service-to-service authentication
+- HTTPS communication between frontend and backend`,
+
+  longDescriptionFr: `FormBridge est une plateforme de traitement et d'automatisation de documents alimentée par l'IA, conçue pour ingérer des documents, extraire des informations, stocker les données traitées et fournir des capacités de recherche et de révision.
+
+**Présentation du projet**
+FormBridge permet aux organisations d'automatiser les flux de travail documentaires en :
+- Ingérant des factures, reçus, contrats et autres documents
+- Extrayant des données structurées via OCR alimenté par l'IA
+- Fournissant une revue humaine pour les résultats à faible confiance
+- Maintenant des archives de documents consultables
+- Offrant des pistes d'audit complètes
+
+**Fonctionnalités principales**
+| Module | Fonctionnalité |
+|-------|---------|
+| Téléchargement de documents | Stockage direct SAS vers blob |
+| OCR et extraction | Intégration Azure AI Document Intelligence |
+| Flux de révision | Intervention humaine pour les résultats à faible confiance |
+| Recherche et archive | Azure AI Search avec filtrage de métadonnées |
+| Retraitement de documents | Déclenchement du retraitement pour une meilleure précision |
+| Piste d'audit | Fonctionnalités de conformité complètes
+
+**Pile technologique**
+**Frontend**
+- Framework : Next.js 16.2.12
+- Bibliothèque UI : React 19.2.4
+- Style : Tailwind CSS 4
+- Langage : TypeScript 5
+- Déploiement : Vercel
+
+**Backend**
+- Framework : FastAPI 0.109.0
+- Langage : Python 3.12
+- Serveur ASGI : Uvicorn 0.27.0
+- Serveur de production : Gunicorn 21.2.0
+- Authentification : JWT (python-jose) + bcrypt 3.2.2
+- Tests : pytest 7.4.4
+- Déploiement : Conteneur Docker sur Azure App Service
+
+**Services cloud Azure**
+- Azure App Service : Héberge le backend FastAPI conteneurisé
+- Azure Cosmos DB : Stocke les données de l'application
+- Azure Storage Account : Stocke les documents téléchargés
+- Azure AI Document Intelligence : Analyse de documents par IA
+- Azure AI Search : Indexation et recherche de documents
+- Azure Service Bus : Messagerie asynchrone
+- Azure Communication Services : Livraison d'e-mails pour réinitialisation de mot de passe
+- Application Insights : Surveillance, télémétrie et diagnostics
+- Identités gérées : Accès identité Azure entre services
+
+**Fonctionnalités de sécurité**
+- Authentification JWT avec hachage bcrypt des mots de passe
+- Réinitialisation de mot de passe via Azure Communication Services
+- Suivi des erreurs avec intégration Honeybadger
+- Aucun secret committed dans le contrôle de source
+- Identités gérées Azure pour l'authentification service-à-service
+- Communication HTTPS entre frontend et backend`,
+
+  longDescriptionAr: `FormBridge هي منصة معالجة وأتمتة مستندات مدعومة بالذكاء الاصطناعي، مصممة لاستيعاب المستندات، واستخراج المعلومات، وتخزين البيانات المعالجة، وتوفير قدرات البحث والمراجعة.
+
+**نظرة عامة على المشروع**
+FormBridge تمكّن المؤسسات من أتمتة سير عمل المستندات من خلال:
+- استيعاب الفواتير والإيصالات والعقود والمستندات الأخرى
+- استخراج البيانات المنظمة باستخدام OCR المدعوم بالذكاء الاصطناعي
+- توفير مراجعة بشرية للنتائج منخفضة الثقة
+- الحفاظ على أرشيفات المستندات القابلة للبحث
+- تقديم سجلات تدقيق شاملة
+
+**الميزات الرئيسية**
+| الوحدة | الوظيفة |
+|-------|---------|
+| رفع المستندات | تخزين مباشر SAS إلى blob |
+| OCR والاستخراج | تكامل Azure AI Document Intelligence |
+| سير العمل المراجعة | تدخل بشري للنتائج منخفضة الثقة |
+| البحث والأرشيف | Azure AI Search مع تصفية البيانات الوصفية |
+| إعادة معالجة المستندات | تشغيل إعادة المعالجة لتحسين الدقة |
+| سجل التدقيق | ميزات امتثال شاملة
+
+**المكدس التقني**
+**الواجهة الأمامية**
+- الإطار: Next.js 16.2.12
+- مكتبة واجهة المستخدم: React 19.2.4
+- التنسيق: Tailwind CSS 4
+- اللغة: TypeScript 5
+- النشر: Vercel
+
+**الواجهة الخلفية**
+- الإطار: FastAPI 0.109.0
+- اللغة: Python 3.12
+- خادم ASGI: Uvicorn 0.27.0
+- خادم الإنتاج: Gunicorn 21.2.0
+- المصادقة: JWT (python-jose) + bcrypt 3.2.2
+- الاختبار: pytest 7.4.4
+- النشر: حاوية Docker على Azure App Service
+
+**خدمات Azure السحابية**
+- Azure App Service: يستضيف خلفية FastAPI في حاوية
+- Azure Cosmos DB: يخزن بيانات التطبيق
+- Azure Storage Account: يخزن المستندات المرفوعة
+- Azure AI Document Intelligence: تحليل المستندات بالذكاء الاصطناعي
+- Azure AI Search: فهرسة وبحث المستندات
+- Azure Service Bus: المراسلة غير المتزامنة
+- Azure Communication Services: تسليم البريد الإلكتروني لإعادة تعيين كلمة المرور
+- Application Insights: المراقبة والقياس عن بعد والتشخيص
+- الهويات المدارة: الوصول القائم على هوية Azure بين الخدمات
+
+**ميزات الأمان**
+- مصادقة JWT مع تشفير bcrypt لكلمات المرور
+- إعادة تعيين كلمة المرور عبر Azure Communication Services
+- تتبع الأخطاء مع تكامل Honeybadger
+- لا أسرار مُرتكبة في التحكم بالمصدر
+- الهويات المدارة Azure للمصادقة بين الخدمات
+- اتصال HTTPS بين الواجهة الأمامية والخلفية`,
+
+  category: ["fullstack", "backend", "deployment"],
+
+  tags: [
+    "Next.js",
+    "FastAPI",
+    "Azure AI Document Intelligence",
+    "Azure Cosmos DB",
+    "Azure Storage",
+    "Azure AI Search",
+    "Docker",
+    "TypeScript",
+    "Python",
+    "JWT Authentication",
+    "OCR"
+  ],
+
+  githubUrl: "https://github.com/Othmane-aoubid/formbridge",
+
+  featured: true,
+
+  metrics: "AI-powered document processing with Azure integration",
+
+  dataset: "Full-stack document automation platform with Azure AI services",
+  datasetFr: "Plateforme d'automatisation de documents full-stack avec services Azure AI",
+  datasetAr: "منصة أتمتة مستندات متكاملة مع خدمات Azure AI",
+
+  results: [
+    { label: "Frontend", value: "Next.js 16 + React 19" },
+    { label: "Backend", value: "FastAPI + Python 3.12" },
+    { label: "Cloud", value: "Azure Services" },
+    { label: "AI Integration", value: "Azure Document Intelligence" },
+  ],
+
+  techStack: [
+    "Next.js 16",
+    "React 19",
+    "FastAPI",
+    "Python 3.12",
+    "Azure AI Document Intelligence",
+    "Azure Cosmos DB",
+    "Azure Storage",
+    "Azure AI Search",
+    "Docker",
+    "TypeScript",
+    "JWT Authentication"
+  ],
+
+  approach:
+    "Full-stack document processing platform with Azure AI integration, human-in-the-loop review, and comprehensive audit trails for enterprise document automation.",
+
+  approachFr:
+    "Plateforme de traitement de documents full-stack avec intégration Azure AI, revue humaine et pistes d'audit complètes pour l'automatisation documentaire d'entreprise.",
+
+  approachAr:
+    "منصة معالجة مستندات متكاملة مع تكامل Azure AI، مراجعة بشرية، وسجلات تدقيق شاملة لأتمتة المستندات المؤسسية.",
+  },
+  {
   id: "Clarte-Website",
   title: "Clarté Cleaning Services Platform",
   titleFr: "Plateforme de Services de Nettoyage Clarté",

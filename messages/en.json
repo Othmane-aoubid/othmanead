@@ -202,7 +202,7 @@
   },
   "projects": {
   "title": "All Projects",
-  "subtitle": "4 production-grade software projects built with modern technologies",
+  "subtitle": "5 production-grade software projects built with modern technologies",
   "filter_all": "All",
   "filter_backend": "Backend",
   "filter_deployment": "Deployment",

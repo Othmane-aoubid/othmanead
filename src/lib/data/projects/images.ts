@@ -5,6 +5,13 @@ export interface ProjectImage {
 
 export const projectImages: Record<string, ProjectImage[]> = {
   // ── FEATURED ──────────────────────────────────────────────────────────────
+ "formbridge": [
+    { src: "/fm1.png", caption: "FormBridge dashboard overview" },
+    { src: "/fm2.png", caption: "Document upload and processing interface" },
+    { src: "/fm3.png", caption: "AI-powered OCR and data extraction results" },
+    { src: "/fm4.png", caption: "Human-in-the-loop review workflow" },
+    { src: "/fm5.png", caption: "Searchable document archive with filters" },
+  ],
  "Clarte-Website": [
   { src: "/projects/clarte.png", caption: "Homepage and hero section" },
   { src: "/projects/clarte2.png", caption: "Cleaning services overview" },
